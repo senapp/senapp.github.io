@@ -49,7 +49,7 @@ ul li.active a {
   color: black;
 }
 .logo img {
-  position: absolute;
+  position: fixed;
   top: -15px;
   left: 20px;
   width: 200px;
