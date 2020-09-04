@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/background.png);*/
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgb(49, 49, 49);
+}
+.topbar {
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  top: 0%;
+  background-color: rgb(49, 49, 49);
+}
+.ultopbar {
+  position: absolute;
+  top: 25px;
+  width: 500px;
+  left: 50px;
+  right: 0;
+  height: auto;
+  margin: auto;
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+  padding: 5px 0px;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid #fff transparent;
+  transition: 0.3s ease;
+}
+ul li a:hover {
+  background-color: white;
+  color: black;
+}
+ul li.active a {
+  background-color: white;
+  color: black;
+}
+.logo img {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  width: 200px;
+  height: auto;
+  margin: auto;
+}
+.main {
+  top: 75px;
+  width: 95%;
+  margin: auto;
+}
+.legalMain {
+  position: relative;
+  top: 75px;
+  width: 100%;
+  margin: auto;
+}
+.title {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.title h1 {
+  color: #fff;
+  font-size: 70px;
+}
+
+.legal {
+  padding: 0% 0%;
+}
+.content ul {
+  float: none;
+  list-style-type: initial;
+  margin-top: 0%;
+  padding: 5px;
+}
+.content ul li {
+  display: list-item;
+  margin-left: 20px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.content ul li a {
+  color: rgb(78, 78, 255);
+  padding: 0px 0px;
+  border: 0px;
+  transition: none;
+}
+.content ul li a:hover {
+  background-color: unset;
+  color: unset;
+}
+
+.collapsible {
+  background-color: rgb(49, 49, 49);
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.content p {
+  margin-bottom: 15px;
+}
+
+.colActive,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0px 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: rgb(49, 49, 49);
+  color: white;
+  margin-left: 25px;
+  margin-right: 35px;
+}
+
+.collapsible:after {
+  content: "\1405"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: left;
+  margin-right: 15px;
+}
+
+.colActive:after {
+  content: "\1401"; /* Unicode character for "minus" sign (-) */
+}
