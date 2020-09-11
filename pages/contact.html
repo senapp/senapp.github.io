@@ -3,8 +3,17 @@
   <head>
     <title>Senapp Studios</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="../scripts/topbar.js"></script>
+    <script>
+      function Load() {
+        calculateSpacing();
+      }
+      function Resize() {
+        calculateSpacing();
+      }
+    </script>
   </head>
-  <body onresize="calculateSpacing()" onload="calculateSpacing()">
+  <body onresize="Resize()" onload="Load()">
     <header>
       <div class="main">
         <div class="title">
@@ -22,6 +31,5 @@
       </div>
       <div class="logo"><img id="logo" src="../images/logo.png" /></div>
     </header>
-    <script src="../scripts/topbar.js"></script>
   </body>
 </html>

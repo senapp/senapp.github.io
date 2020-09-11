@@ -3,8 +3,22 @@
   <head>
     <title>Senapp Studios</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="../scripts/topbar.js"></script>
+    <script src="../scripts/legalParameter.js"></script>
+    <script src="../scripts/collapsible.js"></script>
+    <script>
+      function Load(){
+        calculateSpacing();
+        getParameter();
+        collapsibleLoad();
+      }
+      function Resize(){
+        calculateSpacing();
+
+      }
+    </script>
   </head>
-  <body onresize="calculateSpacing()" onload="calculateSpacing()">
+  <body onresize="Resize()" onload="Load()">
     <header>     
       <div class="legalMain">      
         <div class="legal">
@@ -553,49 +567,5 @@
       </div>
       <div class="logo"><img id="logo" src="../images/logo.png" /></div>
     </header>
-    <script>
-      window.addEventListener('load', getParameter());
-      function getParameter(){
-
-        var x = document.URL;
-      var strings = x.split('?');
-      if (strings.length != 1) {
-        var coll = document.getElementsByClassName("collapsible");
-        var id = parseInt(strings[1]);
-        console.log(id);
-        if (id < coll.length){
-          coll[id].classList.toggle("colActive");
-          var content = coll[id].nextElementSibling;
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-            content.style.padding = "0 20px";
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            content.style.padding = "20px 20px";
-          }
-        }
-      }
-      }
-    </script>
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("colActive");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-            content.style.padding = "0 20px";
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            content.style.padding = "20px 20px";
-          }
-        });
-      }
-    </script>
-    <script src="../scripts/topbar.js"></script>
-
   </body>
 </html>
