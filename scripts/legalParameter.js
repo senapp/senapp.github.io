@@ -16,5 +16,14 @@ function getParameter() {
         content.style.padding = "20px 20px";
       }
     }
+    var colap = document.getElementsByClassName("collapsible");
+    var bar = document.getElementsByClassName("bottombar")[0];
+    var combinedHeight = 0;
+    for (x = 0; x < colap.length; x++) {
+      if (colap[x].nextElementSibling.style.maxHeight) {
+        combinedHeight += colap[x].nextElementSibling.scrollHeight;
+      }
+    }
+    bar.style.bottom = "-" + (-200 + combinedHeight) + "px";
   }
 }
