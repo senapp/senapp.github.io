@@ -4,13 +4,7 @@
   font-family: sans-serif;
 }
 body {
-  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/background.png);*/
   height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-color: rgb(255, 255, 255);
 }
 .bottombar {
   position: absolute;
@@ -19,9 +13,16 @@ body {
   bottom: -60px;
   background-color: rgb(255, 200, 0);
 }
+.bottombar-apps {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: -150px;
+  background-color: rgb(255, 200, 0);
+}
 .ulbottombar {
   position: absolute;
-  top: 17.5px;
+  top: 10px;
   align-self: center;
   width: 1000px;
   height: auto;
@@ -42,10 +43,8 @@ body {
   transition: 0.3s ease;
 }
 .ulbottombar li a:hover {
-  color: black;
-}
-.ulbottombar li.active a {
-  color: black;
+  color: white;
+  font-size: 20px;
 }
 .topbar {
   position: fixed;
@@ -56,7 +55,7 @@ body {
 }
 .ultopbar {
   position: absolute;
-  top: 17.5px;
+  top: 15px;
   width: 500px;
   left: 17.5px;
   height: auto;
@@ -76,10 +75,12 @@ body {
   transition: 0.3s ease;
 }
 .ultopbar li a:hover {
-  color: black;
+  color: white;
+  font-size: 20px;
 }
 .ultopbar li.active a {
-  color: black;
+  color: white;
+  font-size: 20px;
 }
 .logo img {
   position: fixed;
@@ -92,6 +93,7 @@ body {
 }
 .main {
   top: 60px;
+  height: auto;
   width: 95%;
   margin: auto;
 }
@@ -198,4 +200,77 @@ body {
 }
 .legal strong {
   color: rgb(49, 49, 49);
+}
+
+.appstoptext {
+  position: relative;
+  text-align: center;
+  font-size: 45px;
+  color: black;
+  margin-top: 125px;
+}
+.appitem img {
+  height: 250px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 25%;
+  transition: 0.3s ease;
+}
+.appitem img:hover {
+  height: 260px;
+  width: 260px;
+}
+.apptitle {
+  text-align: center;
+  font-family: sans-serif;
+}
+.appcontainer {
+  justify-content: center;
+  margin-top: 50px;
+  display: grid;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.contact {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: rgb(49, 49, 49);
+  font-size: 25px;
+}
+.copyright {
+  color: white;
+  text-align: center;
+  margin-top: 43px;
+  font-size: 12px;
+}
+
+.ulbottombar-socials {
+  position: absolute;
+  top: 10px;
+  align-self: center;
+  height: auto;
+  margin: auto;
+  right: 17.5px;
+  list-style-type: none;
+}
+.ulbottombar-socials img {
+  display: inline-block;
+  padding: 0px 5px;
+  max-height: 35px;
+  max-width: 35px;
+  vertical-align: middle;
+  transition: 0.3s ease;
+}
+.ulbottombar-socials a img:hover {
+  color: white;
+  max-height: 40px;
+  max-width: 40px;
 }
