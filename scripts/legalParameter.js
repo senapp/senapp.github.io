@@ -4,7 +4,6 @@ function getParameter() {
   if (strings.length != 1) {
     var coll = document.getElementsByClassName("collapsible");
     var id = parseInt(strings[1]);
-    console.log(id);
     if (id < coll.length) {
       coll[id].classList.toggle("colActive");
       var content = coll[id].nextElementSibling;
@@ -24,6 +23,6 @@ function getParameter() {
         combinedHeight += colap[x].nextElementSibling.scrollHeight;
       }
     }
-    bar.style.bottom = "-" + (-200 + combinedHeight) + "px";
+    bar.style.bottom = "-" + (200 + combinedHeight) + "px";
   }
 }

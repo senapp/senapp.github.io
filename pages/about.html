@@ -9,7 +9,10 @@
       name="keywords"
       content="Senapp, Senapp Studios, International Football Simulator, IFS, About"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Senapp Studios</title>
     <link rel="icon" href="../images/icons/icon.png" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
@@ -24,8 +27,13 @@
     </script>
   </head>
   <body onresize="Resize()" onload="Load()">
-    <header>
-      <nav class="topbar">
+    <header class="topbar">
+      <nav>
+        <div class="menu-nav-top">
+          <button onclick="menuBarClick(true)">
+            <img class="menu-nav-icon-top" src="../images/icons/menuBar.png" />
+          </button>
+        </div>
         <ul class="ultopbar">
           <li><a href="home.html"> Home </a></li>
           <li><a href="projects.html"> Projects </a></li>
@@ -41,10 +49,12 @@
       </div>
     </main>
     <footer class="bottombar">
- <div class="menu-nav-bottom">
+      <div class="menu-nav-bottom">
         <button onclick="menuBarClick(false)">
           <img class="menu-nav-icon-bottom" src="../images/icons/menuBar.png" />
-        </button>      <ul class="ulbottombar">
+        </button>
+      </div>
+      <ul class="ulbottombar">
         <li><a href="legal.html?0"> Privacy Policy </a></li>
         <li><a href="legal.html?1"> Terms & Conditions </a></li>
         <li><a href="legal.html?2"> Statments </a></li>
