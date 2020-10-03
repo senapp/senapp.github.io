@@ -74,7 +74,7 @@ function menuBarClick(topbar) {
 
   if (topbar) {
     if (!barActive) {
-      window.scrollTo(0, 0);
+      setTimeout(() => window.scrollTo(0, 0), 100);
       body.style.overflow = "hidden";
       ultopbar.style.display = "unset";
       ultopbar.style.top = "60px";
@@ -97,13 +97,13 @@ function menuBarClick(topbar) {
     }
   } else {
     if (!barActive) {
-      window.scrollTo(0, 0);
+      setTimeout(() => window.scrollTo(0, 0), 100);
       body.style.overflow = "hidden";
       ulbottombar.style.display = "unset";
       ulbottombar.style.top = "60px";
       ulbottombar.style.left = "0px";
       ulbottombarsocials.style.display = "unset";
-      ulbottombarsocials.style.top = "90%";
+      ulbottombarsocials.style.top = "85%";
       ulbottombarsocials.style.left = "10px";
       for (i = 0; i < liBottombar.length; i++) {
         liBottombar[i].style.display = "block";
@@ -130,4 +130,5 @@ function menuBarClick(topbar) {
       barActive = false;
     }
   }
+  calculateSpacing();
 }
