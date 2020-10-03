@@ -26,6 +26,11 @@
   <body onresize="Resize()" onload="Load()">
     <header class="topbar">
       <nav>
+        <div class="menu-nav-top">
+          <button onclick="menuBarClick(true)">
+            <img class="menu-nav-icon-top" src="../images/icons/menuBar.png" />
+          </button>
+        </div>
         <ul class="ultopbar">
           <li><a href="../pages/home.html"> Home </a></li>
           <li><a href="../pages/projects.html"> Projects </a></li>
@@ -41,7 +46,10 @@
       </div>
     </main>
     <footer class="bottombar">
-      <ul class="ulbottombar">
+ <div class="menu-nav-bottom">
+        <button onclick="menuBarClick(false)">
+          <img class="menu-nav-icon-bottom" src="../images/icons/menuBar.png" />
+        </button>      <ul class="ulbottombar">
         <li><a href="../pages/legal.html?0"> Privacy Policy </a></li>
         <li><a href="../pages/legal.html?1"> Terms & Conditions </a></li>
         <li><a href="../pages/legal.html?2"> Statments </a></li>

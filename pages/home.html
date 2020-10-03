@@ -29,6 +29,12 @@
   <body onresize="Resize()" onload="Load()">
     <header class="topbar">
       <nav>
+        <div class="menu-nav-top">
+          <button onclick="menuBarClick(true)">
+            <img class="menu-nav-icon-top" src="../images/icons/menuBar.png" />
+          </button>
+        </div>
+
         <ul class="ultopbar">
           <li class="active"><a href="home.html"> Home </a></li>
           <li><a href="projects.html"> Projects </a></li>
@@ -44,6 +50,11 @@
       </div>
     </main>
     <footer class="bottombar">
+      <div class="menu-nav-bottom">
+        <button onclick="menuBarClick(false)">
+          <img class="menu-nav-icon-bottom" src="../images/icons/menuBar.png" />
+        </button>
+      </div>
       <ul class="ulbottombar">
         <li><a href="legal.html?0"> Privacy Policy </a></li>
         <li><a href="legal.html?1"> Terms & Conditions </a></li>
@@ -69,5 +80,6 @@
       </ul>
       <div class="copyright">© 2020 Senapp Studios, Albin Björklund</div>
     </footer>
+    <div class="menubar-overlay"></div>
   </body>
 </html>
