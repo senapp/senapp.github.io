@@ -11,8 +11,6 @@ function calculateSpacing() {
     "menu-nav-icon-bottom"
   )[0];
 
-  var copyright = document.getElementsByClassName("copyright")[0];
-
   var ultopbar = document.getElementsByClassName("ultopbar")[0];
 
   if (w < 525 && !barActive) {
