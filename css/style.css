@@ -122,6 +122,7 @@ body {
 .title h1 {
   color: rgb(49, 49, 49);
   font-size: 70px;
+  text-align: center;
 }
 
 .legal {
@@ -383,4 +384,15 @@ body {
 .project-info-right h3 {
   font-style: italic;
   color: rgb(100, 100, 100);
+}
+
+.faq-container {
+  position: absolute;
+  top: 17.5%;
+  width: 70%;
+  height: 100%;
+  left: 15%;
+}
+.faq {
+  margin-bottom: 15px;
 }
