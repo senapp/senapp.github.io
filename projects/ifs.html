@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="title" content="International Football Simualtor" />
+    <meta name="title" content="International Football Simulator" />
     <meta
       name="description"
-      content="Information on the project International Football Simulator."
+      content="Information on the project International Football Simualtor."
     />
     <meta name="author" content="Albin Björklund" />
     <meta
@@ -20,12 +20,15 @@
     <link rel="icon" href="../images/icons/icon.png" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <script src="../scripts/barSpacing.js"></script>
+    <script src="../scripts/projectSpacing.js"></script>
     <script>
       function Load() {
         calculateSpacing();
+        projectSpacing();
       }
       function Resize() {
         calculateSpacing();
+        projectSpacing();
       }
     </script>
   </head>
@@ -43,14 +46,59 @@
           <li><a href="../pages/home.html"> Home </a></li>
           <li><a href="../pages/projects.html"> Projects </a></li>
           <li><a href="../pages/contact.html"> Contact </a></li>
-          <li class="active"><a href="../pages/about.html"> About </a></li>
-        </ul>
+                  </ul>
       </nav>
       <div class="logo"><img id="logo" src="../images/logo.png" /></div>
     </header>
     <main class="main">
-      <div class="title">
-        <h1>Senapp Studios</h1>
+      <div class="project-icon">
+        <img id="project-icon" src="../images/projects/ifs.png" />
+      </div>
+      <div class="project-info-right">
+        <h3>Name</h3>
+        <h1 class="project-name">International Football Simulator</h1>
+        <div class="project-links">
+          <h3>Links</h3>
+            <a
+              href="https://apps.apple.com/us/app/international-fotball-sim/id1500480022" 
+              target="_blank"
+              class="link-button"
+            >IOS
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.Senapp.FC2018S"
+              target="_blank"
+              class="link-button"
+            >Android
+            </a>
+          </div>
+          <div class="project-tools">
+            <h3>Tools</h3>
+            <p class="project-tools-text">C#, Unity, Firebase</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-info">
+        <h2>Description</h2>
+        <p>
+          Features:
+<br><br>
+          Create a tournament with whatever options you like. You want a tournament set in Russia with 8 groups and 4 teams in each group, then you can do it. Want to simulate a four league system in which you have a different amount of teams in each group with custom names, then you can do it.
+          <br>
+          <br>
+          Create and edit teams, federations, players, want to change the name of something then you can do it. Each aspect has many things you can change.
+          <br>
+          <br>
+          Each match has an in-depth view of match statistics such as possession, who scored, which can be view live or after the match is complete.
+          <br>
+          <br>
+          Simulate international football in every possible way!
+          <br>
+          <br>
+          Privacy Policy: https://senapp.github.io/pages/legal.html?0
+          <br>
+          Terms and Conditions: https://senapp.github.io/pages/legal.html?1
+        </p>
       </div>
     </main>
     <footer class="bottombar">

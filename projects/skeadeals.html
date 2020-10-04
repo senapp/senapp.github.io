@@ -2,12 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="title" content="Skeå deals" />
-    <meta name="description" content="Information on the project Skeå Deals." />
+    <meta name="title" content="Skeå Deals" />
+    <meta
+      name="description"
+      content="Information on the project Skeå Deals."
+    />
     <meta name="author" content="Albin Björklund" />
     <meta
       name="keywords"
-      content="Senapp, Senapp Studios, International Football Simulator, IFS, Skeå Deals, Skeådeals"
+      content="Senapp, Senapp Studios, International Football Simulator, IFS, Skeå Deals, Skeadeals"
     />
     <meta
       name="viewport"
@@ -17,12 +20,15 @@
     <link rel="icon" href="../images/icons/icon.png" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <script src="../scripts/barSpacing.js"></script>
+    <script src="../scripts/projectSpacing.js"></script>
     <script>
       function Load() {
         calculateSpacing();
+        projectSpacing();
       }
       function Resize() {
         calculateSpacing();
+        projectSpacing();
       }
     </script>
   </head>
@@ -40,14 +46,41 @@
           <li><a href="../pages/home.html"> Home </a></li>
           <li><a href="../pages/projects.html"> Projects </a></li>
           <li><a href="../pages/contact.html"> Contact </a></li>
-          <li class="active"><a href="../pages/about.html"> About </a></li>
         </ul>
       </nav>
       <div class="logo"><img id="logo" src="../images/logo.png" /></div>
     </header>
     <main class="main">
-      <div class="title">
-        <h1>Senapp Studios</h1>
+      <div class="project-icon">
+        <img id="project-icon" src="../images/projects/skeadeals.png" />
+      </div>
+      <div class="project-info-right">
+        <h3>Name</h3>
+        <h1 class="project-name">Skeådeals</h1>
+        <div class="project-links">
+          <h3>Links</h3>
+          <a href="https://www.facebook.com/watch/?v=637417440390173 
+          " target="_blank"
+          class="link-button">Award</a>
+          </div>
+          <div class="project-tools">
+            <h3>Tools</h3>
+            <p class="project-tools-text">C#, Unity, Firebase - Database</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-info">
+        <h2>Description</h2>
+        <p>
+          Skeådeals was a coupon app that offered coupons from local companies in Skellefteå.
+          <br>
+          <br>
+
+All discounts were one-time discounts and come up with a confirmation screen when used, this screen you would show to the cashier to use the coupon.
+
+<br><br>
+The app was active between 1 January 2020 and 1 July 2020 and coupons came and went constantly during that period.
+        </p>
       </div>
     </main>
     <footer class="bottombar">
