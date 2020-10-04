@@ -309,3 +309,39 @@ body {
 .menu-nav-bottom button {
   display: none;
 }
+.project-icon img {
+  position: absolute;
+  height: auto;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 25%;
+  color: grey;
+  left: 10%;
+  top: 17.5%;
+}
+.project-info-right {
+  position: absolute;
+  top: 17.5%;
+  background-color: red;
+  width: 60%;
+  right: 10%;
+  height: 200px;
+}
+.project-info {
+  position: absolute;
+  top: 55%;
+  background-color: red;
+  width: 80%;
+  right: 10%;
+  height: 35%;
+}
+.project-name {
+  position: absolute;
+}
+.project-links {
+  position: absolute;
+}
+.project-tools {
+  position: absolute;
+}

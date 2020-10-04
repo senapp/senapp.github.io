@@ -20,12 +20,15 @@
     <link rel="icon" href="../images/icons/icon.png" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <script src="../scripts/barSpacing.js"></script>
+    <script src="../scripts/projectSpacing.js"></script>
     <script>
       function Load() {
         calculateSpacing();
+        projectSpacing();
       }
       function Resize() {
         calculateSpacing();
+        projectSpacing();
       }
     </script>
   </head>
@@ -49,9 +52,11 @@
       <div class="logo"><img id="logo" src="../images/logo.png" /></div>
     </header>
     <main class="main">
-      <div class="title">
-        <h1>Senapp Studios</h1>
+      <div class="project-icon">
+        <img id="project-icon" src="../images/projects/efs.png" />
       </div>
+      <div class="project-info-right"></div>
+      <div class="project-info"></div>
     </main>
     <footer class="bottombar">
       <div class="menu-nav-bottom">
