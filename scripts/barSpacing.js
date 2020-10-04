@@ -48,7 +48,6 @@ function menuBarClick(topbar) {
     .getElementsByClassName("ulbottombar")[0]
     .getElementsByTagName("li");
 
-  var body = document.getElementsByTagName("body")[0];
   var ulbottombarsocials = document.getElementsByClassName(
     "ulbottombar-socials"
   )[0];
@@ -56,7 +55,6 @@ function menuBarClick(topbar) {
   if (topbar) {
     if (!barActive) {
       setTimeout(() => window.scrollTo(0, 0), 100);
-      body.style.overflow = "hidden";
       ultopbar.style.display = "unset";
       ultopbar.style.top = "60px";
       ultopbar.style.left = "0px";
@@ -79,7 +77,6 @@ function menuBarClick(topbar) {
   } else {
     if (!barActive) {
       setTimeout(() => window.scrollTo(0, 0), 100);
-      body.style.overflow = "hidden";
       ulbottombar.style.display = "unset";
       ulbottombar.style.top = "60px";
       ulbottombar.style.left = "0px";
