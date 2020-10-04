@@ -48,6 +48,7 @@ function menuBarClick(topbar) {
     .getElementsByClassName("ulbottombar")[0]
     .getElementsByTagName("li");
 
+  var body = document.getElementsByTagName("body")[0];
   var ulbottombarsocials = document.getElementsByClassName(
     "ulbottombar-socials"
   )[0];
@@ -55,6 +56,9 @@ function menuBarClick(topbar) {
   if (topbar) {
     if (!barActive) {
       setTimeout(() => window.scrollTo(0, 0), 100);
+      setTimeout(function () {
+        body.style.overflow = "hidden";
+      }, 150);
       ultopbar.style.display = "unset";
       ultopbar.style.top = "60px";
       ultopbar.style.left = "0px";
@@ -77,9 +81,13 @@ function menuBarClick(topbar) {
   } else {
     if (!barActive) {
       setTimeout(() => window.scrollTo(0, 0), 100);
+      setTimeout(function () {
+        body.style.overflow = "hidden";
+      }, 150);
       ulbottombar.style.display = "unset";
       ulbottombar.style.top = "60px";
       ulbottombar.style.left = "0px";
+      ulbottombar.style.width = "100%";
       ulbottombarsocials.style.display = "unset";
       ulbottombarsocials.style.top = "85%";
       ulbottombarsocials.style.left = "10px";
@@ -96,6 +104,7 @@ function menuBarClick(topbar) {
       body.style.overflow = "unset";
       ulbottombar.style.top = "15px";
       ulbottombar.style.left = "17.5px";
+      ulbottombar.style.width = "1000px";
       ulbottombarsocials.style.display = "none";
       ulbottombarsocials.style.top = "10px";
       ulbottombarsocials.style.left = "unset";
