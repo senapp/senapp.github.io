@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="title" content="International Football Simulator" />
+    <meta
+      name="description"
+      content="Information on the project International Football Simualtor."
+    />
+    <meta name="author" content="Albin Björklund" />
+    <meta
+      name="keywords"
+      content="Senapp, Senapp Studios, International Football Simulator, IFS"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Senapp Studios</title>
+    <link rel="icon" href="../images/icons/icon.png" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="../scripts/barSpacing.js"></script>
+    <script src="../scripts/projectSpacing.js"></script>
+    <script>
+      function Load() {
+        calculateSpacing();
+        projectSpacing();
+      }
+      function Resize() {
+        calculateSpacing();
+        projectSpacing();
+      }
+    </script>
+  </head>
+  <body onresize="Resize()" onload="Load()">
+    <header class="topbar">
+      <nav>
+        <div class="menu-nav-top">
+          <img
+            onclick="menuBarClick(true)"
+            class="menu-nav-icon-top"
+            src="../images/icons/menuBar.png"
+          />
+        </div>
+        <ul class="ultopbar">
+          <li><a href="../pages/home.html"> Home </a></li>
+          <li><a href="../pages/projects.html"> Projects </a></li>
+          <li><a href="../pages/contact.html"> Contact </a></li>
+                  </ul>
+      </nav>
+      <div class="logo"><img id="logo" src="../images/logo.png" /></div>
+    </header>
+    <main class="main">
+      <div class="project-icon">
+        <img id="project-icon" src="../images/projects/pathfinding.png" />
+      </div>
+      <div class="project-info-right">
+        <h3>Name</h3>
+        <h1 class="project-name">Pathfinding Algorithms</h1>
+        <div class="project-links">
+          <h3>Links</h3>
+            <a
+              href="https://senapp.github.io/PathingAlgorithms/pathfinding.html" 
+              target="_blank"
+              class="link-button"
+            >Browser
+            </a>
+            <a
+              href="https://github.com/senapp/PathingAlgorithms"
+              target="_blank"
+              class="link-button"
+            >Github
+            </a>
+          </div>
+          <div class="project-tools">
+            <h3>Tools</h3>
+            <p class="project-tools-text">Javascript</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-info">
+        <h2>Description</h2>
+        <p>
+          Visualizer for pathfinding algorithms such as A* and Dijkstra. 
+        </p>
+      </div>
+    </main>
+    <footer class="bottombar">
+      <div class="menu-nav-bottom">
+        <img
+          onclick="menuBarClick(false)"
+          class="menu-nav-icon-bottom"
+          src="../images/icons/menuBar.png"
+        />
+      </div>
+      <ul class="ulbottombar">
+        <li><a href="../pages/legal.html?0"> Privacy Policy </a></li>
+        <li><a href="../pages/legal.html?1"> Terms & Conditions </a></li>
+        <li><a href="../pages/legal.html?2"> Statments </a></li>
+        <li><a href="../pages/legal.html?3"> Attributions </a></li>
+        <li><a href="../pages/support.html"> Support </a></li>
+      </ul>
+      <ul class="ulbottombar-socials">
+        <a href="https://www.reddit.com/r/Senapp/" target="_blank"
+          ><img src="../images/icons/reddit.png"
+        /></a>
+        <a href="https://twitter.com/senappstudios" target="_blank"
+          ><img src="../images/icons/twitter.png"
+        /></a>
+        <a href="https://www.instagram.com/senappstudios/" target="_blank"
+          ><img src="../images/icons/instagram.png"
+        /></a>
+        <a
+          href="https://www.youtube.com/channel/UCCPrhv3IQ5d35qnMZruUekw"
+          target="_blank"
+          ><img src="../images/icons/youtube.png"
+        /></a>
+      </ul>
+      <div class="copyright">© 2020 Senapp Studios, Albin Björklund</div>
+    </footer>
+  </body>
+</html>

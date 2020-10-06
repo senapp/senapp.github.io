@@ -244,6 +244,7 @@ body {
   grid-column-gap: 25px;
   grid-row-gap: 25px;
   grid-template-columns: auto auto auto auto;
+  grid-auto-rows: auto;
   padding: 10px;
 }
 
@@ -327,10 +328,10 @@ body {
 }
 .project-info-right {
   position: absolute;
-  top: 18.5%;
+  top: 16%;
   width: 60%;
   right: 10%;
-  height: 200px;
+  height: 250px;
 }
 .project-info {
   position: absolute;

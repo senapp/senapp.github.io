@@ -21,14 +21,14 @@ function projectSpacing() {
     bottombar.style.bottom = -60 - info.scrollHeight + "px";
     infoRight.style.width = 80 + "%";
     infoRight.style.top = 55 + "%";
-    info.style.top = 90 + "%";
+    info.style.top = 95 + "%";
     logo.style.left = 50 + "%";
     logo.style.top = 32.5 + "%";
     logo.style.msTransform = "translate(-50%, -50%)";
     logo.style.transform = "translate(-50%, -50%)";
   } else if (w < 1050) {
     bottombar.style.bottom = -60 - info.scrollHeight + "px";
-    infoRight.style.top = 18.5 + "%";
+    infoRight.style.top = 16 + "%";
     infoRight.style.width = 50 + "%";
     info.style.top = 55 + "%";
     logo.style.left = 10 + "%";
@@ -37,6 +37,7 @@ function projectSpacing() {
     logo.style.transform = "unset";
   } else {
     bottombar.style.bottom = -60 - info.scrollHeight + "px";
+    infoRight.style.top = 16 + "%";
     infoRight.style.width = 60 + "%";
     info.style.top = 55 + "%";
     logo.style.left = 10 + "%";
