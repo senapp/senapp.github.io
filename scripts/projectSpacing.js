@@ -30,7 +30,7 @@ function projectSpacing() {
     bottombar.style.bottom = -60 - info.scrollHeight + "px";
     infoRight.style.top = 16 + "%";
     infoRight.style.width = 50 + "%";
-    info.style.top = 50 + "%";
+    info.style.top = 55 + "%";
     logo.style.left = 10 + "%";
     logo.style.top = 17.5 + "%";
     logo.style.msTransform = "unset";
@@ -39,7 +39,7 @@ function projectSpacing() {
     bottombar.style.bottom = -60 - info.scrollHeight + "px";
     infoRight.style.top = 16 + "%";
     infoRight.style.width = 60 + "%";
-    info.style.top = 50 + "%";
+    info.style.top = 55 + "%";
     logo.style.left = 10 + "%";
     logo.style.top = 17.5 + "%";
     logo.style.msTransform = "unset";
