@@ -335,7 +335,7 @@ body {
 }
 .project-info {
   position: absolute;
-  top: 55%;
+  top: 50%;
   width: 80%;
   right: 10%;
   min-height: 35%;
@@ -396,4 +396,8 @@ body {
 }
 .faq {
   margin-bottom: 15px;
+}
+.project-links a {
+  position: absolute;
+  top: 20px;
 }
