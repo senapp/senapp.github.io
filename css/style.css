@@ -397,7 +397,7 @@ body {
 .faq {
   margin-bottom: 15px;
 }
-.project-links a {
+.project-links-container {
   position: absolute;
-  top: 20px;
+  top: 25px;
 }
