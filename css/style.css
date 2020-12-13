@@ -45,11 +45,11 @@ body {
 }
 .ulbottombar li a:hover {
   color: black;
-  font-size: 17.5px;
+  font-size: 17px;
 }
 .ulbottombar li.active a {
   color: black;
-  font-size: 20px;
+  font-size: 17px;
 }
 .topbar {
   position: fixed;
@@ -83,11 +83,11 @@ body {
 }
 .ultopbar li a:hover {
   color: black;
-  font-size: 20px;
+  font-size: 18px;
 }
 .ultopbar li.active a {
   color: black;
-  font-size: 20px;
+  font-size: 18px;
 }
 .logo img {
   position: fixed;
@@ -227,6 +227,7 @@ body {
   border-radius: 25%;
   transition: 0.3s ease;
   color: grey;
+  object-fit: cover;
 }
 .appitem img:hover {
   height: 260px;
@@ -290,8 +291,8 @@ body {
 }
 .ulbottombar-socials a img:hover {
   color: white;
-  max-height: 40px;
-  max-width: 40px;
+  max-height: 38px;
+  max-width: 38px;
 }
 .menu-nav-icon-top {
   display: none;
@@ -317,7 +318,7 @@ body {
 }
 .project-icon img {
   position: absolute;
-  height: auto;
+  height: 200px;
   width: 200px;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -325,6 +326,7 @@ body {
   color: grey;
   left: 10%;
   top: 17.5%;
+  object-fit: cover;
 }
 .project-info-right {
   position: absolute;
