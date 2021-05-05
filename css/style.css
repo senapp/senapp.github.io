@@ -272,28 +272,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.ulbottombar-socials {
-  position: absolute;
-  top: 10px;
-  align-self: center;
-  height: auto;
-  margin: auto;
-  right: 17.5px;
-  list-style-type: none;
-}
-.ulbottombar-socials img {
-  display: inline-block;
-  padding: 0px 5px;
-  max-height: 35px;
-  max-width: 35px;
-  vertical-align: middle;
-  transition: 0.3s ease;
-}
-.ulbottombar-socials a img:hover {
-  color: white;
-  max-height: 38px;
-  max-width: 38px;
-}
 .menu-nav-icon-top {
   display: none;
   position: fixed;

@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Senapp Studios</title>
+
     <meta charset="UTF-8" />
-    <meta name="title" content="Projects" />
-    <meta
-      name="description"
-      content="Projects I have worked on and links for downloads."
-    />
+    <meta name="title" content="Apps" />
+    <meta name="description" content="Applications made by Senapp Studios" />
     <meta name="author" content="Albin Björklund" />
     <meta
       name="keywords"
-      content="Senapp, Senapp Studios, International Football Simulator, IFS, Projects"
+      content="Senapp, Senapp Studios, International Football Simulator, IFS, Apps"
     />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Senapp Studios</title>
+
     <link rel="icon" href="../images/icons/icon.png" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/socialMedia.css" />
+
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      data-auto-a11y="true"
+    ></script>
     <script src="../scripts/barSpacing.js"></script>
     <script src="../scripts/appSpacing.js"></script>
     <script>
@@ -44,19 +49,20 @@
         </div>
         <ul class="ultopbar">
           <li><a href="home.html"> Home </a></li>
-          <li><a href="apps.html"> Apps </a></li>
+          <li class="active"><a href="apps.html"> Apps </a></li>
           <li><a href="contact.html"> Contact </a></li>
         </ul>
       </nav>
       <div class="logo"><img id="logo" src="../images/logo.png" /></div>
     </header>
+
     <main class="main">
-      <h1 class="appstoptext">Projects</h1>
+      <h1 class="appstoptext">Apps</h1>
       <div class="appcontainer">
         <div>
           <a href="../projects/ifs.html" class="appitem"
-            ><img src="../images/projects/ifs.png" />
-          </a>
+            ><img src="../images/projects/ifs.png"
+          /></a>
           <h4 class="apptitle">International Football Simulator</h4>
           <div class="apptitle">
             <a
@@ -74,8 +80,8 @@
         </div>
         <div>
           <a href="../projects/efs.html" class="appitem"
-            ><img src="../images/projects/efs.png" />
-          </a>
+            ><img src="../images/projects/efs.png"
+          /></a>
           <h4 class="apptitle">English Football Simulator</h4>
           <div class="apptitle">
             <a
@@ -85,67 +91,9 @@
             >
           </div>
         </div>
-        <div>
-          <a href="../projects/skeadeals.html" class="appitem"
-            ><img src="../images/projects/skeadeals.png" />
-          </a>
-          <h4 class="apptitle">Skeådeals</h4>
-        </div>
-        <div>
-          <a href="../projects/pathfinding.html" class="appitem"
-            ><img src="../images/projects/pathfinding.png" />
-          </a>
-          <h4 class="apptitle">Pathfinding Algorithms</h4>
-          <div class="apptitle">
-            <a
-              href="https://senapp.github.io/PathingAlgorithms/pathfinding.html"
-              target="_blank"
-              >Browser</a
-            >
-            &
-            <a
-              href="https://github.com/senapp/PathingAlgorithms"
-              target="_blank"
-              >Github</a
-            >
-          </div>
-        </div>
-        <div>
-          <a href="../projects/chess.html" class="appitem"
-            ><img src="../images/projects/chess.png" />
-          </a>
-          <h4 class="apptitle">Chess</h4>
-          <div class="apptitle">
-            <a href="https://github.com/senapp/ChessPython" target="_blank"
-              >Github</a
-            >
-          </div>
-        </div>
-
-        <div>
-          <a href="../projects/bbgranden.html" class="appitem"
-            ><img src="../images/projects/bbgranden.png" />
-          </a>
-          <h4 class="apptitle">B&B Gränden Website</h4>
-          <div class="apptitle">
-            <a href="https://www.bbgranden.se/pages/home" target="_blank"
-              >Website</a
-            >
-          </div>
-        </div>
-        <div>
-          <a href="../projects/senappGameEngine.html" class="appitem"
-            ><img src="../images/projects/gameEngine.png" />
-          </a>
-          <h4 class="apptitle">Senapp Game Engine</h4>
-          <div class="apptitle">
-            <a href="https://github.com/senapp/senappGameEngine" target="_blank"
-              >Github</a
-            >
-          </div>
-        </div>
       </div>
     </main>
+
     <footer class="bottombar-apps">
       <div class="menu-nav-bottom">
         <img
@@ -161,23 +109,31 @@
         <li><a href="legal.html?3"> Attributions </a></li>
         <li><a href="support.html"> Support </a></li>
       </ul>
-      <ul class="ulbottombar-socials">
+      <ul class="social-media">
         <a href="https://www.reddit.com/r/Senapp/" target="_blank"
-          ><img src="../images/icons/reddit.png"
-        /></a>
+          ><img src="../images/icons/reddit.png" />
+        </a>
         <a href="https://twitter.com/senappstudios" target="_blank"
-          ><img src="../images/icons/twitter.png"
-        /></a>
+          ><img src="../images/icons/twitter.png" />
+        </a>
         <a href="https://www.instagram.com/senappstudios/" target="_blank"
-          ><img src="../images/icons/instagram.png"
-        /></a>
+          ><img src="../images/icons/instagram.png" />
+        </a>
         <a
           href="https://www.youtube.com/channel/UCCPrhv3IQ5d35qnMZruUekw"
           target="_blank"
-          ><img src="../images/icons/youtube.png"
-        /></a>
+        >
+          <span class="youtube">
+            <i class="fab fa-youtube"></i>
+          </span>
+        </a>
       </ul>
-      <div class="copyright">© 2020 Senapp Studios, Albin Björklund</div>
+      <div class="copyright">
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        © Senapp Studios, Albin Björklund
+      </div>
     </footer>
   </body>
 </html>
