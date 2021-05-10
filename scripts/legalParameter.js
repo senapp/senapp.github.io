@@ -7,6 +7,9 @@ function getParameter() {
     if (id < coll.length) {
       coll[id].classList.toggle("colActive");
       var content = coll[id].nextElementSibling;
+      var barnav = (document.getElementsByClassName(
+        "bottombar-nav"
+      )[0].children[id].className = "active");
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
         content.style.padding = "0 20px";
@@ -17,6 +20,7 @@ function getParameter() {
     }
     var colap = document.getElementsByClassName("collapsible");
     var bar = document.getElementsByClassName("bottombar")[0];
+
     var combinedHeight = 0;
     for (x = 0; x < colap.length; x++) {
       if (colap[x].nextElementSibling.style.maxHeight) {

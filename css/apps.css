@@ -1,0 +1,37 @@
+.appstoptext {
+  position: relative;
+  text-align: center;
+  font-size: 45px;
+  color: black;
+  top: 125px;
+  margin-bottom: 150px;
+}
+.appitem img {
+  height: 250px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 25%;
+  transition: 0.3s ease;
+  color: grey;
+  object-fit: cover;
+}
+.appitem img:hover {
+  height: 260px;
+  width: 260px;
+  box-shadow: 2px 2px 10px;
+}
+.apptitle {
+  text-align: center;
+  font-family: sans-serif;
+}
+.appcontainer {
+  justify-content: center;
+  margin-top: 50px;
+  display: grid;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  grid-template-columns: auto auto auto auto;
+  grid-auto-rows: auto;
+  padding: 10px;
+}

@@ -1,114 +1,80 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Open Sans";
+  font-weight: bolder;
 }
 body {
   height: 100vh;
 }
-.bottombar {
-  position: absolute;
+#holder {
+  min-height: 100%;
+  position: relative;
+}
+#body {
+  padding-bottom: 100px; /* height of footer */
+}
+footer {
+  height: 100px;
   width: 100%;
-  height: 60px;
-  bottom: -60px;
-  background-color: rgb(255, 200, 0);
-  transition: 0.3s ease;
-}
-.bottombar-apps {
   position: absolute;
-  width: 100%;
-  height: 60px;
-  bottom: -60px;
-  background-color: rgb(255, 200, 0);
+  left: 0;
+  bottom: 0;
 }
-.ulbottombar {
-  position: absolute;
-  top: 15px;
-  align-self: center;
-  width: 1000px;
-  height: auto;
-  margin: auto;
-  left: 17.5px;
-  list-style-type: none;
+h1 {
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bolder;
+  line-height: 26.4px;
 }
-.ulbottombar li {
-  display: inline-block;
-  padding: 5px 0px;
-  margin-bottom: 5px;
+h3 {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bolder;
+  line-height: 15.4px;
 }
-.ulbottombar li a {
+p {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 20px;
+}
+span {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 20px;
+}
+a {
   text-decoration: none;
-  color: #fff;
-  padding: 5px 20px;
-  border: 1px solid #fff transparent;
-  transition: 0.3s ease;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 20px;
 }
-.ulbottombar li a:hover {
-  color: black;
-  font-size: 17px;
+blockquote {
+  font-family: "Open Sans";
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 30px;
 }
-.ulbottombar li.active a {
-  color: black;
-  font-size: 17px;
-}
-.topbar {
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  top: 0%;
-  background-color: rgb(255, 200, 0);
-  z-index: 1;
-  transition: 0.3s ease;
-}
-.ultopbar {
-  position: absolute;
-  top: 15px;
-  width: 500px;
-  left: 17.5px;
-  height: auto;
-  margin: auto;
-  list-style-type: none;
-}
-.ultopbar li {
-  display: inline-block;
-  padding: 5px 0px;
-  margin-bottom: 5px;
-}
-.ultopbar li a {
-  text-decoration: none;
-  color: #fff;
-  padding: 5px 20px;
-  border: 1px solid #fff transparent;
-  transition: 0.3s ease;
-}
-.ultopbar li a:hover {
-  color: black;
-  font-size: 18px;
-}
-.ultopbar li.active a {
-  color: black;
-  font-size: 18px;
-}
-.logo img {
-  position: fixed;
-  top: 0px;
-  width: 100px;
-  right: 20px;
-  height: auto;
-  margin: auto;
-  border-radius: 50%;
-  z-index: 1;
-}
+
 .main {
   top: 60px;
   height: auto;
   width: 95%;
-  margin: auto;
-}
-.legalMain {
-  position: relative;
-  top: 60px;
-  width: 100%;
   margin: auto;
 }
 .title {
@@ -116,6 +82,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 90%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -123,130 +90,6 @@ body {
   color: rgb(49, 49, 49);
   font-size: 70px;
   text-align: center;
-}
-
-.legal {
-  padding: 0% 0%;
-}
-.content ul {
-  float: none;
-  list-style-type: initial;
-  margin-top: 0%;
-  padding: 5px;
-}
-.content ul li {
-  display: list-item;
-  margin-left: 20px;
-  padding: 5px;
-  margin-bottom: 15px;
-  color: rgb(49, 49, 49);
-}
-.content ul li a {
-  color: rgb(78, 78, 255);
-  padding: 0px 0px;
-  border: 0px;
-  transition: none;
-}
-.content ul li a:hover {
-  background-color: unset;
-  color: unset;
-}
-
-.collapsible {
-  background-color: rgb(255, 255, 255);
-  color: rgb(49, 49, 49);
-  cursor: pointer;
-  padding: 20px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  font-weight: bold;
-}
-.content p {
-  margin-bottom: 15px;
-}
-
-.colActive,
-.collapsible:hover {
-  background-color: rgb(238, 238, 238);
-}
-
-.content {
-  padding: 0px 20px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: rgb(255, 255, 255);
-  color: white;
-  margin-left: 25px;
-  margin-right: 35px;
-}
-
-.collapsible:after {
-  content: "\1405"; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: rgb(49, 49, 49);
-  float: left;
-  margin-right: 15px;
-}
-
-.colActive:after {
-  content: "\1401"; /* Unicode character for "minus" sign (-) */
-}
-
-.legal p {
-  color: rgb(49, 49, 49);
-}
-.legal b {
-  color: rgb(49, 49, 49);
-}
-.legal h1 {
-  color: rgb(49, 49, 49);
-}
-.legal h2 {
-  color: rgb(49, 49, 49);
-}
-.legal strong {
-  color: rgb(49, 49, 49);
-}
-
-.appstoptext {
-  position: relative;
-  text-align: center;
-  font-size: 45px;
-  color: black;
-  margin-top: 125px;
-}
-.appitem img {
-  height: 250px;
-  width: 250px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 25%;
-  transition: 0.3s ease;
-  color: grey;
-  object-fit: cover;
-}
-.appitem img:hover {
-  height: 260px;
-  width: 260px;
-  box-shadow: 2px 2px 10px;
-}
-.apptitle {
-  text-align: center;
-  font-family: sans-serif;
-}
-.appcontainer {
-  justify-content: center;
-  margin-top: 50px;
-  display: grid;
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
-  grid-template-columns: auto auto auto auto;
-  grid-auto-rows: auto;
-  padding: 10px;
 }
 
 .contact {
@@ -261,145 +104,31 @@ body {
   width: 90%;
   word-wrap: break-word;
 }
-.copyright {
-  position: absolute;
-  color: white;
-  text-align: center;
-  font-size: 12px;
-  display: inline;
-  left: 50%;
-  bottom: -5px;
-  transform: translate(-50%, -50%);
-}
-
-.ulbottombar-socials {
-  position: absolute;
-  top: 10px;
-  align-self: center;
-  height: auto;
-  margin: auto;
-  right: 17.5px;
-  list-style-type: none;
-}
-.ulbottombar-socials img {
-  display: inline-block;
-  padding: 0px 5px;
-  max-height: 35px;
-  max-width: 35px;
-  vertical-align: middle;
-  transition: 0.3s ease;
-}
-.ulbottombar-socials a img:hover {
-  color: white;
-  max-height: 38px;
-  max-width: 38px;
-}
-.menu-nav-icon-top {
-  display: none;
-  position: fixed;
-  max-width: 30px;
-  max-height: 30px;
-  top: 15px;
-  left: 15px;
-}
-.menu-nav-icon-bottom {
-  display: none;
-  position: absolute;
-  max-width: 30px;
-  max-height: 30px;
-  top: 15px;
-  left: 15px;
-}
-.menu-nav-top button {
-  display: none;
-}
-.menu-nav-bottom button {
-  display: none;
-}
-.project-icon img {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 25%;
-  color: grey;
-  left: 10%;
-  top: 17.5%;
-  object-fit: cover;
-}
-.project-info-right {
-  position: absolute;
-  top: 16%;
-  width: 60%;
-  right: 10%;
-  height: 250px;
-}
-.project-info {
-  position: absolute;
-  top: 50%;
-  width: 80%;
-  right: 10%;
-  min-height: 35%;
-  height: auto;
-}
-.project-info h2 {
-  position: relative;
-  left: 10px;
-}
-.project-info p {
-  padding: 10px;
-  font-size: 25px;
-  word-wrap: break-word;
-}
-.project-name {
-  position: relative;
-  left: 0%;
-  top: 0%;
-  font-size: 30px;
-}
-.link-button {
-  position: relative;
-  font-size: 25px;
-  top: 33%;
-  margin-right: 10px;
-}
-.project-links {
-  position: absolute;
-  width: 100%;
-  height: 33%;
-  top: 55%;
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-}
-.project-tools {
-  position: absolute;
-  width: 100%;
-  height: 34%;
-  top: 66%;
-}
-.project-tools-text {
-  position: absolute;
-  left: 0%;
-  top: 25%;
-  font-size: 26px;
-}
-.project-info-right h3 {
+.contact a {
+  font-size: 22px;
   font-style: italic;
-  color: rgb(100, 100, 100);
 }
-
 .faq-container {
   position: absolute;
   top: 17.5%;
   width: 70%;
-  height: 100%;
+  height: 82.5%;
   left: 15%;
 }
 .faq {
   margin-bottom: 15px;
 }
-.project-links-container {
-  position: absolute;
-  top: 25px;
+.faq h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 28px;
+}
+.faq p {
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+.faq-container h1 {
+  margin-bottom: 35px;
+  font-size: 32px;
+  line-height: 28px;
 }
