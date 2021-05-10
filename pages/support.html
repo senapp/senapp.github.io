@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Senapp Studios</title>
+
     <meta charset="UTF-8" />
     <meta name="title" content="Support" />
     <meta name="description" content="FAQ and links for contact info." />
@@ -13,110 +15,140 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Senapp Studios</title>
+
     <link rel="icon" href="../images/icons/icon.png" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      data-auto-a11y="true"
+    ></script>
     <script src="../scripts/barSpacing.js"></script>
     <script src="../scripts/faqspacing.js"></script>
     <script>
       function Load() {
-        calculateSpacing();
         faqspacing();
+        calculateSpacing();
       }
       function Resize() {
-        calculateSpacing();
         faqspacing();
+        calculateSpacing();
       }
     </script>
   </head>
-  <body onresize="Resize()" onload="Load()">
-    <header class="topbar">
-      <nav>
-        <div class="menu-nav-top">
+  <div id="holder">
+    <body onresize="Resize()" onload="Load()">
+      <header class="topbar">
+        <nav>
+          <div class="menu-nav-top">
+            <img
+              onclick="menuBarClick(true)"
+              class="menu-nav-icon-top"
+              src="../images/icons/menuBar.png"
+            />
+          </div>
+          <ul class="topbar-nav">
+            <li><a href="home.html"> Home </a></li>
+            <li><a href="apps.html"> Apps </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+          </ul>
+        </nav>
+        <div class="logo"><img id="logo" src="../images/logo.png" /></div>
+      </header>
+
+      <main class="main">
+        <div class="faq-container">
+          <h1>* Frequently asked questions *</h1>
+          <div class="faq">
+            <h3>My game crashed/freezed/bugged?</h3>
+            <p>
+              Send a email to help.senapp@gmail.com with videos and screenshoots
+              of the issue. If that is not possible then please describe what
+              you were doing leading up to the issue. The more details the
+              better!
+            </p>
+          </div>
+          <div class="faq">
+            <h3>Can you make a club simulator as well?</h3>
+            <p>
+              Yes! <br />
+              <br />
+              I will start working on club versions from each country when I
+              feel International Football Simulator is at a very good level (I
+              don't think it is to far away).
+            </p>
+          </div>
+          <div class="faq">
+            <h3>I bought no ads but I still get ads?</h3>
+            <p>
+              When you launch the game, go to the settings menu and click
+              "Restore Purchases". If this doesn't fix the issue then send a
+              email to help.senapp@gmail.com with your recipt number so I can
+              refund you. Example: GPA.3213.3123.1231
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="bottombar">
+        <div class="menu-nav-bottom">
           <img
-            onclick="menuBarClick(true)"
-            class="menu-nav-icon-top"
+            onclick="menuBarClick(false)"
+            class="menu-nav-icon-bottom"
             src="../images/icons/menuBar.png"
           />
         </div>
-        <ul class="ultopbar">
-          <li><a href="home.html"> Home </a></li>
-          <li><a href="apps.html"> Apps </a></li>
-          <li><a href="contact.html"> Contact </a></li>
+        <ul class="bottombar-nav">
+          <li><a href="legal.html?0"> Privacy Policy </a></li>
+          <li><a href="legal.html?1"> Terms & Conditions </a></li>
+          <li><a href="legal.html?2"> Statments </a></li>
+          <li><a href="legal.html?3"> Attributions </a></li>
+          <li class="active"><a href="support.html"> Support </a></li>
         </ul>
-      </nav>
-      <div class="logo"><img id="logo" src="../images/logo.png" /></div>
-    </header>
-    <main class="main">
-      <div class="faq-container">
-        <h1 style="margin-bottom: 10px">Frequently asked questions</h1>
-        <div class="faq">
-          <h3 style="font-size: 24px">My game crashed/freezed/bugged?</h3>
-          <p style="font-size: 20px">
-            Send a email to help.senapp@gmail.com with a description of what you
-            were doing, where you were when the crash. If keeps happening try to
-            record it and send the video with the mail. The more details the
-            better! <br /><br />Please dont send a mail like "The game crashed"
-            "The game has bugs". These messages don't help at all, this is like
-            saying "There are problems in the world" please be specific about
-            when, where and how your problem happend, to your best knowledge.
-          </p>
+        <ul class="social-media">
+          <a href="https://discord.com/invite/XbMRVedRwr" target="_blank">
+            <span class="discord">
+              <i class="fab fa-discord"></i>
+            </span>
+          </a>
+          <a href="https://www.reddit.com/r/Senapp/" target="_blank">
+            <span class="reddit">
+              <i class="fab fa-reddit"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/senappstudios" target="_blank">
+            <span class="twitter">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+          <a href="https://www.instagram.com/senappstudios/" target="_blank">
+            <span class="instagram">
+              <i class="fab fa-instagram"></i>
+            </span>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCCPrhv3IQ5d35qnMZruUekw"
+            target="_blank"
+          >
+            <span class="youtube">
+              <i class="fab fa-youtube"></i>
+            </span>
+          </a>
+        </ul>
+        <div class="copyright">
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          © Senapp Studios, Albin Björklund
         </div>
-        <div class="faq">
-          <h3 style="font-size: 24px">
-            Can you make a club simulator as well?
-          </h3>
-          <p style="font-size: 20px">
-            Yes! <br />
-            <br />
-            I will start working on country specfic versions when I fell
-            International Football Simulator is at a very good level (I don't
-            think it is to far away).
-          </p>
-        </div>
-        <div class="faq">
-          <h3 style="font-size: 24px">I bought no ads but I still get ads?</h3>
-          <p style="font-size: 20px">
-            When you launch the game, go to the settings menu and click "Restore
-            Purchases". If this doesn't fix the issue then send a email to
-            help.senapp@gmail.com with your recipt number so I can refund you.
-            Example: GPA.3213.3123.1231
-          </p>
-        </div>
-      </div>
-    </main>
-    <footer class="bottombar">
-      <div class="menu-nav-bottom">
-        <img
-          onclick="menuBarClick(false)"
-          class="menu-nav-icon-bottom"
-          src="../images/icons/menuBar.png"
-        />
-      </div>
-      <ul class="ulbottombar">
-        <li><a href="legal.html?0"> Privacy Policy </a></li>
-        <li><a href="legal.html?1"> Terms & Conditions </a></li>
-        <li><a href="legal.html?2"> Statments </a></li>
-        <li><a href="legal.html?3"> Attributions </a></li>
-        <li class="active"><a href="support.html"> Support </a></li>
-      </ul>
-      <ul class="ulbottombar-socials">
-        <a href="https://www.reddit.com/r/Senapp/" target="_blank"
-          ><img src="../images/icons/reddit.png"
-        /></a>
-        <a href="https://twitter.com/senappstudios" target="_blank"
-          ><img src="../images/icons/twitter.png"
-        /></a>
-        <a href="https://www.instagram.com/senappstudios/" target="_blank"
-          ><img src="../images/icons/instagram.png"
-        /></a>
-        <a
-          href="https://www.youtube.com/channel/UCCPrhv3IQ5d35qnMZruUekw"
-          target="_blank"
-          ><img src="../images/icons/youtube.png"
-        /></a>
-      </ul>
-      <div class="copyright">© 2020 Senapp Studios, Albin Björklund</div>
-    </footer>
-  </body>
+      </footer>
+    </body>
+  </div>
 </html>

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Senapp Studios</title>
+
     <meta charset="UTF-8" />
     <meta name="title" content="Home" />
     <meta
@@ -16,86 +18,122 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Senapp Studios</title>
+
     <link rel="icon" href="../images/icons/icon.png" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      data-auto-a11y="true"
+    ></script>
     <script src="../scripts/barSpacing.js"></script>
-    <script src="../scripts/bottombarSpacing.js"></script>
     <script>
       function Load() {
         calculateSpacing();
-        bottombarSpacing();
       }
       function Resize() {
         calculateSpacing();
-        bottombarSpacing();
       }
     </script>
   </head>
-  <body onresize="Resize()" onload="Load()">
-    <header class="topbar">
-      <nav>
-        <div class="menu-nav-top">
+  <div id="holder">
+    <body onresize="Resize()" onload="Load()">
+      <header class="topbar">
+        <nav>
+          <div class="menu-nav-top">
+            <img
+              onclick="menuBarClick(true)"
+              class="menu-nav-icon-top"
+              src="../images/icons/menuBar.png"
+            />
+          </div>
+          <ul class="topbar-nav">
+            <li class="active"><a href="home.html"> Home </a></li>
+            <li><a href="apps.html"> Apps </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+          </ul>
+        </nav>
+        <div class="logo"><img id="logo" src="../images/logo.png" /></div>
+      </header>
+
+      <main class="main">
+        <div class="title">
+          <h1 style="line-height: 70px">Senapp Studios</h1>
+          <h2
+            style="
+              text-align: center;
+              line-height: 25px;
+              color: rgb(255, 200, 0);
+              margin-top: 15px;
+            "
+          >
+            Game and App developer
+          </h2>
+          <h3 style="text-align: center; margin-top: 25px">
+            Check out the website with the tabs above and below!
+          </h3>
+        </div>
+      </main>
+
+      <footer class="bottombar">
+        <div class="menu-nav-bottom">
           <img
-            onclick="menuBarClick(true)"
-            class="menu-nav-icon-top"
+            onclick="menuBarClick(false)"
+            class="menu-nav-icon-bottom"
             src="../images/icons/menuBar.png"
           />
         </div>
-
-        <ul class="ultopbar">
-          <li class="active"><a href="home.html"> Home </a></li>
-          <li><a href="apps.html"> Apps </a></li>
-          <li><a href="contact.html"> Contact </a></li>
+        <ul class="bottombar-nav">
+          <li><a href="legal.html?0"> Privacy Policy </a></li>
+          <li><a href="legal.html?1"> Terms & Conditions </a></li>
+          <li><a href="legal.html?2"> Statments </a></li>
+          <li><a href="legal.html?3"> Attributions </a></li>
+          <li><a href="support.html"> Support </a></li>
         </ul>
-      </nav>
-      <div class="logo"><img id="logo" src="../images/logo.png" /></div>
-    </header>
-    <main class="main">
-      <div class="title">
-        <h1>Senapp Studios</h1>
-        <h2
-          style="text-align: center; color: rgb(255, 200, 0); margin-top: 5px"
-        >
-          Game and App developer
-        </h2>
-        <h3 style="text-align: center; margin-top: 15px">
-          Check out the website with the tabs above and below!
-        </h3>
-      </div>
-    </main>
-    <footer class="bottombar">
-      <div class="menu-nav-bottom">
-        <img
-          onclick="menuBarClick(false)"
-          class="menu-nav-icon-bottom"
-          src="../images/icons/menuBar.png"
-        />
-      </div>
-      <ul class="ulbottombar">
-        <li><a href="legal.html?0"> Privacy Policy </a></li>
-        <li><a href="legal.html?1"> Terms & Conditions </a></li>
-        <li><a href="legal.html?2"> Statments </a></li>
-        <li><a href="legal.html?3"> Attributions </a></li>
-        <li><a href="support.html"> Support </a></li>
-      </ul>
-      <ul class="ulbottombar-socials">
-        <a href="https://www.reddit.com/r/Senapp/" target="_blank"
-          ><img src="../images/icons/reddit.png"
-        /></a>
-        <a href="https://twitter.com/senappstudios" target="_blank"
-          ><img src="../images/icons/twitter.png"
-        /></a>
-        <a href="https://www.instagram.com/senappstudios/" target="_blank"
-          ><img src="../images/icons/instagram.png"
-        /></a>
-        <a
-          href="https://www.youtube.com/channel/UCCPrhv3IQ5d35qnMZruUekw"
-          target="_blank"
-          ><img src="../images/icons/youtube.png"
-        /></a>
-      </ul>
-      <div class="copyright">© 2020 Senapp Studios, Albin Björklund</div>
-    </footer>
-  </body>
+        <ul class="social-media">
+          <a href="https://discord.com/invite/XbMRVedRwr" target="_blank">
+            <span class="discord">
+              <i class="fab fa-discord"></i>
+            </span>
+          </a>
+          <a href="https://www.reddit.com/r/Senapp/" target="_blank">
+            <span class="reddit">
+              <i class="fab fa-reddit"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/senappstudios" target="_blank">
+            <span class="twitter">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+          <a href="https://www.instagram.com/senappstudios/" target="_blank">
+            <span class="instagram">
+              <i class="fab fa-instagram"></i>
+            </span>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCCPrhv3IQ5d35qnMZruUekw"
+            target="_blank"
+          >
+            <span class="youtube">
+              <i class="fab fa-youtube"></i>
+            </span>
+          </a>
+        </ul>
+        <div class="copyright">
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          © Senapp Studios, Albin Björklund
+        </div>
+      </footer>
+    </body>
+  </div>
 </html>

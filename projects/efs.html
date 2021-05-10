@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Senapp Studios</title>
+
     <meta charset="UTF-8" />
     <meta name="title" content="English Football Simulator" />
     <meta
@@ -16,9 +18,22 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Senapp Studios</title>
+
     <link rel="icon" href="../images/icons/icon.png" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/project.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      data-auto-a11y="true"
+    ></script>
     <script src="../scripts/barSpacing.js"></script>
     <script src="../scripts/projectSpacing.js"></script>
     <script>
@@ -32,114 +47,141 @@
       }
     </script>
   </head>
-  <body onresize="Resize()" onload="Load()">
-    <header class="topbar">
-      <nav>
-        <div class="menu-nav-top">
-          <img
-            onclick="menuBarClick(true)"
-            class="menu-nav-icon-top"
-            src="../images/icons/menuBar.png"
-          />
+  <div id="holder">
+    <body onresize="Resize()" onload="Load()">
+      <header class="topbar">
+        <nav>
+          <div class="menu-nav-top">
+            <img
+              onclick="menuBarClick(true)"
+              class="menu-nav-icon-top"
+              src="../images/icons/menuBar.png"
+            />
+          </div>
+          <ul class="topbar-nav">
+            <li><a href="../pages/home.html"> Home </a></li>
+            <li><a href="../pages/apps.html"> Apps </a></li>
+            <li><a href="../pages/contact.html"> Contact </a></li>
+          </ul>
+        </nav>
+        <div class="logo"><img id="logo" src="../images/logo.png" /></div>
+      </header>
+
+      <main class="main">
+        <div class="project-icon">
+          <img id="project-icon" src="../images/projects/efs.png" />
         </div>
-        <ul class="ultopbar">
-          <li><a href="../pages/home.html"> Home </a></li>
-          <li><a href="../pages/projects.html"> Projects </a></li>
-          <li><a href="../pages/contact.html"> Contact </a></li>
-                  </ul>
-      </nav>
-      <div class="logo"><img id="logo" src="../images/logo.png" /></div>
-    </header>
-    <main class="main">
-      <div class="project-icon">
-        <img id="project-icon" src="../images/projects/efs.png" />
-      </div>
-      <div class="project-info-right">
-        <h3>Name</h3>
-        <h1 class="project-name">English Football Simulator</h1>
-        <div class="project-links">
-          <h3>Links</h3>
-          <div class="project-links-container">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.Senapp.ENGFS"
-              target="_blank"
-              class="link-button"
-            >Android
-            </a>
-        </div>
+        <div class="project-info-right">
+          <div class="project-name">
+            <h3>Name</h3>
+            <h1>English Football Simulator</h1>
+          </div>
+          <div class="project-links">
+            <h3>Links</h3>
+            <div class="project-links-container">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.Senapp.ENGFS"
+                target="_blank"
+                class="link-button"
+                >Android
+              </a>
+            </div>
           </div>
           <div class="project-tools">
             <h3>Tools</h3>
             <p class="project-tools-text">C#, Unity</p>
           </div>
         </div>
-      </div>
-      <div class="project-info">
-        <h2>Description</h2>
-        <p>
-          Features:
-          <br>
-          <br>
-          Create a tournament:
-          2, 4, 8 or 16 Group Stages in a group stage style tournament.
-          2 - 20 teams in the league tournament. You can also choose how many games each team plays.
-          Elimination tournament, start the tournament from the final, semifinal, quarterfinal or the knockout stage.
-          <br>
-          <br>
-          You can also randomize the groups/league with either relatively good teams or completely random teams out of 68. You can also edit each group and team individually.
-          <br>
-          <br>
-          Custom Game;
-          Place two teams out of 68 against each other and see what the result would be.
-          <br>
-          <br>
-          Create and Edit teams;
-          You have the ability to create your own team, upload a custom logo, select a level and a name for the new team.
-          You also have the ability to edit already existing teams and change their level, logo and name.
-          <br>
-          <br>
-          68 teams!
-          <br>
-          <br>
-          Privacy Policy:
-          https://senapp.github.io/pages/legal.html?0 <br>
-          Terms and Conditions:
-          https://senapp.github.io/pages/legal.html?1
-        </p>
-      </div>
-    </main>
-    <footer class="bottombar">
-      <div class="menu-nav-bottom">
-        <img
-          onclick="menuBarClick(false)"
-          class="menu-nav-icon-bottom"
-          src="../images/icons/menuBar.png"
-        />
-      </div>
-      <ul class="ulbottombar">
-        <li><a href="../pages/legal.html?0"> Privacy Policy </a></li>
-        <li><a href="../pages/legal.html?1"> Terms & Conditions </a></li>
-        <li><a href="../pages/legal.html?2"> Statments </a></li>
-        <li><a href="../pages/legal.html?3"> Attributions </a></li>
-        <li><a href="../pages/support.html"> Support </a></li>
-      </ul>
-      <ul class="ulbottombar-socials">
-        <a href="https://www.reddit.com/r/Senapp/" target="_blank"
-          ><img src="../images/icons/reddit.png"
-        /></a>
-        <a href="https://twitter.com/senappstudios" target="_blank"
-          ><img src="../images/icons/twitter.png"
-        /></a>
-        <a href="https://www.instagram.com/senappstudios/" target="_blank"
-          ><img src="../images/icons/instagram.png"
-        /></a>
-        <a
-          href="https://www.youtube.com/channel/UCCPrhv3IQ5d35qnMZruUekw"
-          target="_blank"
-          ><img src="../images/icons/youtube.png"
-        /></a>
-      </ul>
-      <div class="copyright">© 2020 Senapp Studios, Albin Björklund</div>
-    </footer>
-  </body>
+        <div class="project-info">
+          <h2>Description</h2>
+          <p>
+            Features:
+            <br />
+            <br />
+            Create a tournament: 2, 4, 8 or 16 Group Stages in a group stage
+            style tournament. 2 - 20 teams in the league tournament. You can
+            also choose how many games each team plays. Elimination tournament,
+            start the tournament from the final, semifinal, quarterfinal or the
+            knockout stage.
+            <br />
+            <br />
+            You can also randomize the groups/league with either relatively good
+            teams or completely random teams out of 68. You can also edit each
+            group and team individually.
+            <br />
+            <br />
+            Custom Game; Place two teams out of 68 against each other and see
+            what the result would be.
+            <br />
+            <br />
+            Create and Edit teams; You have the ability to create your own team,
+            upload a custom logo, select a level and a name for the new team.
+            You also have the ability to edit already existing teams and change
+            their level, logo and name.
+            <br />
+            <br />
+            68 teams!
+            <br />
+            <br />
+            Privacy Policy: https://senapp.github.io/pages/legal.html?0
+            <br />
+            Terms and Conditions: https://senapp.github.io/pages/legal.html?1
+          </p>
+        </div>
+      </main>
+
+      <footer class="bottombar">
+        <div class="menu-nav-bottom">
+          <img
+            onclick="menuBarClick(false)"
+            class="menu-nav-icon-bottom"
+            src="../images/icons/menuBar.png"
+          />
+        </div>
+        <ul class="bottombar-nav">
+          <li><a href="../pages/legal.html?0"> Privacy Policy </a></li>
+          <li><a href="../pages/legal.html?1"> Terms & Conditions </a></li>
+          <li><a href="../pages/legal.html?2"> Statments </a></li>
+          <li><a href="../pages/legal.html?3"> Attributions </a></li>
+          <li><a href="../pages/support.html"> Support </a></li>
+        </ul>
+        <ul class="social-media">
+          <a href="https://discord.com/invite/XbMRVedRwr" target="_blank">
+            <span class="discord">
+              <i class="fab fa-discord"></i>
+            </span>
+          </a>
+          <a href="https://www.reddit.com/r/Senapp/" target="_blank">
+            <span class="reddit">
+              <i class="fab fa-reddit"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/senappstudios" target="_blank">
+            <span class="twitter">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+          <a href="https://www.instagram.com/senappstudios/" target="_blank">
+            <span class="instagram">
+              <i class="fab fa-instagram"></i>
+            </span>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCCPrhv3IQ5d35qnMZruUekw"
+            target="_blank"
+          >
+            <span class="youtube">
+              <i class="fab fa-youtube"></i>
+            </span>
+          </a>
+        </ul>
+        <div class="copyright">
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          © Senapp Studios, Albin Björklund
+        </div>
+      </footer>
+    </body>
+  </div>
 </html>

@@ -1,0 +1,92 @@
+.legalMain {
+  position: relative;
+  top: 60px;
+  width: 100%;
+  margin: auto;
+}
+.legal {
+  padding: 0% 0%;
+}
+.content ul {
+  float: none;
+  list-style-type: initial;
+  margin-top: 0%;
+  padding: 5px;
+}
+.content ul li {
+  display: list-item;
+  margin-left: 20px;
+  padding: 5px;
+  margin-bottom: 15px;
+  color: rgb(49, 49, 49);
+}
+.content ul li a {
+  color: rgb(78, 78, 255);
+  padding: 0px 0px;
+  border: 0px;
+  transition: none;
+}
+.content ul li a:hover {
+  background-color: unset;
+  color: unset;
+}
+
+.collapsible {
+  background-color: rgb(255, 255, 255);
+  color: rgb(49, 49, 49);
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+.content p {
+  margin-bottom: 15px;
+}
+
+.colActive,
+.collapsible:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.content {
+  padding: 0px 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  margin-left: 25px;
+  margin-right: 35px;
+}
+
+.collapsible:after {
+  content: "\1405"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: rgb(49, 49, 49);
+  float: left;
+  margin-right: 15px;
+}
+
+.colActive:after {
+  content: "\1401"; /* Unicode character for "minus" sign (-) */
+}
+
+.legal p {
+  color: rgb(49, 49, 49);
+}
+.legal b {
+  color: rgb(49, 49, 49);
+}
+.legal h1 {
+  color: rgb(49, 49, 49);
+}
+.legal h2 {
+  color: rgb(49, 49, 49);
+}
+.legal strong {
+  color: rgb(49, 49, 49);
+}

@@ -18,7 +18,14 @@
 
     <link rel="icon" href="../images/icons/icon.png" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../css/socialMedia.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/apps.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <script
       src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
@@ -37,103 +44,116 @@
       }
     </script>
   </head>
-  <body onresize="Resize()" onload="Load()">
-    <header class="topbar">
-      <nav>
-        <div class="menu-nav-top">
+  <div id="holder">
+    <body onresize="Resize()" onload="Load()">
+      <header class="topbar">
+        <nav>
+          <div class="menu-nav-top">
+            <img
+              onclick="menuBarClick(true)"
+              class="menu-nav-icon-top"
+              src="../images/icons/menuBar.png"
+            />
+          </div>
+          <ul class="topbar-nav">
+            <li><a href="home.html"> Home </a></li>
+            <li class="active"><a href="apps.html"> Apps </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+          </ul>
+        </nav>
+        <div class="logo"><img id="logo" src="../images/logo.png" /></div>
+      </header>
+
+      <main class="main">
+        <h1 class="appstoptext">Apps</h1>
+        <div class="appcontainer">
+          <div>
+            <a href="../projects/ifs.html" class="appitem"
+              ><img src="../images/projects/ifs.png"
+            /></a>
+            <h4 class="apptitle">International Football Simulator</h4>
+            <div class="apptitle">
+              <a
+                href="https://apps.apple.com/us/app/international-fotball-sim/id1500480022"
+                target="_blank"
+                >IOS</a
+              >
+              &
+              <a
+                href="https://play.google.com/store/apps/details?id=com.Senapp.FC2018S"
+                target="_blank"
+                >Android</a
+              >
+            </div>
+          </div>
+          <div>
+            <a href="../projects/efs.html" class="appitem"
+              ><img src="../images/projects/efs.png"
+            /></a>
+            <h4 class="apptitle">English Football Simulator</h4>
+            <div class="apptitle">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.Senapp.ENGFS"
+                target="_blank"
+                >Android</a
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="bottombar">
+        <div class="menu-nav-bottom">
           <img
-            onclick="menuBarClick(true)"
-            class="menu-nav-icon-top"
+            onclick="menuBarClick(false)"
+            class="menu-nav-icon-bottom"
             src="../images/icons/menuBar.png"
           />
         </div>
-        <ul class="ultopbar">
-          <li><a href="home.html"> Home </a></li>
-          <li class="active"><a href="apps.html"> Apps </a></li>
-          <li><a href="contact.html"> Contact </a></li>
+        <ul class="bottombar-nav">
+          <li><a href="legal.html?0"> Privacy Policy </a></li>
+          <li><a href="legal.html?1"> Terms & Conditions </a></li>
+          <li><a href="legal.html?2"> Statments </a></li>
+          <li><a href="legal.html?3"> Attributions </a></li>
+          <li><a href="support.html"> Support </a></li>
         </ul>
-      </nav>
-      <div class="logo"><img id="logo" src="../images/logo.png" /></div>
-    </header>
-
-    <main class="main">
-      <h1 class="appstoptext">Apps</h1>
-      <div class="appcontainer">
-        <div>
-          <a href="../projects/ifs.html" class="appitem"
-            ><img src="../images/projects/ifs.png"
-          /></a>
-          <h4 class="apptitle">International Football Simulator</h4>
-          <div class="apptitle">
-            <a
-              href="https://apps.apple.com/us/app/international-fotball-sim/id1500480022"
-              target="_blank"
-              >IOS</a
-            >
-            &
-            <a
-              href="https://play.google.com/store/apps/details?id=com.Senapp.FC2018S"
-              target="_blank"
-              >Android</a
-            >
-          </div>
+        <ul class="social-media">
+          <a href="https://discord.com/invite/XbMRVedRwr" target="_blank">
+            <span class="discord">
+              <i class="fab fa-discord"></i>
+            </span>
+          </a>
+          <a href="https://www.reddit.com/r/Senapp/" target="_blank">
+            <span class="reddit">
+              <i class="fab fa-reddit"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/senappstudios" target="_blank">
+            <span class="twitter">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+          <a href="https://www.instagram.com/senappstudios/" target="_blank">
+            <span class="instagram">
+              <i class="fab fa-instagram"></i>
+            </span>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCCPrhv3IQ5d35qnMZruUekw"
+            target="_blank"
+          >
+            <span class="youtube">
+              <i class="fab fa-youtube"></i>
+            </span>
+          </a>
+        </ul>
+        <div class="copyright">
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          © Senapp Studios, Albin Björklund
         </div>
-        <div>
-          <a href="../projects/efs.html" class="appitem"
-            ><img src="../images/projects/efs.png"
-          /></a>
-          <h4 class="apptitle">English Football Simulator</h4>
-          <div class="apptitle">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.Senapp.ENGFS"
-              target="_blank"
-              >Android</a
-            >
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer class="bottombar-apps">
-      <div class="menu-nav-bottom">
-        <img
-          onclick="menuBarClick(false)"
-          class="menu-nav-icon-bottom"
-          src="../images/icons/menuBar.png"
-        />
-      </div>
-      <ul class="ulbottombar">
-        <li><a href="legal.html?0"> Privacy Policy </a></li>
-        <li><a href="legal.html?1"> Terms & Conditions </a></li>
-        <li><a href="legal.html?2"> Statments </a></li>
-        <li><a href="legal.html?3"> Attributions </a></li>
-        <li><a href="support.html"> Support </a></li>
-      </ul>
-      <ul class="social-media">
-        <a href="https://www.reddit.com/r/Senapp/" target="_blank"
-          ><img src="../images/icons/reddit.png" />
-        </a>
-        <a href="https://twitter.com/senappstudios" target="_blank"
-          ><img src="../images/icons/twitter.png" />
-        </a>
-        <a href="https://www.instagram.com/senappstudios/" target="_blank"
-          ><img src="../images/icons/instagram.png" />
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCCPrhv3IQ5d35qnMZruUekw"
-          target="_blank"
-        >
-          <span class="youtube">
-            <i class="fab fa-youtube"></i>
-          </span>
-        </a>
-      </ul>
-      <div class="copyright">
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        © Senapp Studios, Albin Björklund
-      </div>
-    </footer>
-  </body>
+      </footer>
+    </body>
+  </div>
 </html>
