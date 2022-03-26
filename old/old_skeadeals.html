@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Senapp Studios</title>
+
+    <meta charset="UTF-8" />
+    <meta name="title" content="Skeå Deals" />
+    <meta name="description" content="Information on the project Skeå Deals." />
+    <meta name="author" content="Albin Björklund" />
+    <meta
+      name="keywords"
+      content="Senapp, Senapp Studios, International Football Simulator, IFS, Skeå Deals, Skeadeals"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="../images/icons/icon.png" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/project.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+    <script src="../scripts/barSpacing.js"></script>
+    <script src="../scripts/projectSpacing.js"></script>
+    <script>
+      function Load() {
+        calculateSpacing();
+        projectSpacing();
+      }
+      function Resize() {
+        calculateSpacing();
+        projectSpacing();
+      }
+    </script>
+  </head>
+  <div id="holder">
+    <body onresize="Resize()" onload="Load()">
+      <header class="topbar">
+        <nav>
+          <div class="menu-nav-top">
+            <img
+              onclick="menuBarClick(true)"
+              class="menu-nav-icon-top"
+              src="../images/icons/menuBar.png"
+            />
+          </div>
+          <ul class="topbar-nav">
+            <li><a href="../pages/home.html"> Home </a></li>
+            <li><a href="../pages/apps.html"> Apps </a></li>
+            <li><a href="../pages/contact.html"> Contact </a></li>
+          </ul>
+        </nav>
+        <div class="logo"><img id="logo" src="../images/logo.png" /></div>
+      </header>
+
+      <main class="main">
+        <div class="project-icon">
+          <img id="project-icon" src="../images/projects/skeadeals.png" />
+        </div>
+        <div class="project-info-right">
+          <div class="project-name">
+            <h3>Name</h3>
+            <h1>Skeådeals</h1>
+          </div>
+          <div class="project-links">
+            <h3>Links</h3>
+            <div class="project-links-container">
+              <a
+                href="https://www.facebook.com/watch/?v=637417440390173 
+          "
+                target="_blank"
+                class="link-button"
+                >Award</a
+              >
+            </div>
+          </div>
+          <div class="project-tools">
+            <h3>Tools</h3>
+            <p class="project-tools-text">C#, Unity, Firebase - Database</p>
+          </div>
+        </div>
+        <div class="project-info">
+          <h2>Description</h2>
+          <p>
+            Skeådeals was a coupon app that offered coupons from local companies
+            in Skellefteå.
+            <br />
+            <br />
+
+            All discounts were one-time discounts and come up with a
+            confirmation screen when used, this screen you would show to the
+            cashier to use the coupon.
+
+            <br /><br />
+            The app was active between 1 January 2020 and 1 July 2020 and
+            coupons came and went constantly during that period.
+          </p>
+        </div>
+      </main>
+
+      <footer class="bottombar">
+        <div class="menu-nav-bottom">
+          <img
+            onclick="menuBarClick(false)"
+            class="menu-nav-icon-bottom"
+            src="../images/icons/menuBar.png"
+          />
+        </div>
+        <ul class="bottombar-nav">
+          <li><a href="../pages/legal.html?0"> Privacy Policy </a></li>
+          <li><a href="../pages/legal.html?1"> Terms & Conditions </a></li>
+          <li><a href="../pages/legal.html?2"> Statments </a></li>
+          <li><a href="../pages/legal.html?3"> Attributions </a></li>
+          <li><a href="../pages/support.html"> Support </a></li>
+        </ul>
+        <ul class="social-media">
+          <a href="https://discord.com/invite/XbMRVedRwr" target="_blank">
+            <span class="discord">
+              <i class="fab fa-discord"></i>
+            </span>
+          </a>
+          <a href="https://www.reddit.com/r/Senapp/" target="_blank">
+            <span class="reddit">
+              <i class="fab fa-reddit"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/senappstudios" target="_blank">
+            <span class="twitter">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+          <a href="https://www.instagram.com/senappstudios/" target="_blank">
+            <span class="instagram">
+              <i class="fab fa-instagram"></i>
+            </span>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCCPrhv3IQ5d35qnMZruUekw"
+            target="_blank"
+          >
+            <span class="youtube">
+              <i class="fab fa-youtube"></i>
+            </span>
+          </a>
+        </ul>
+        <div class="copyright">
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          © Senapp Studios, Albin Björklund
+        </div>
+      </footer>
+    </body>
+  </div>
+</html>
