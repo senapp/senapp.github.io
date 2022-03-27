@@ -2,25 +2,28 @@ const path = require('path');
 const loaderUtils = require('loader-utils');
 const { merge } = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+
 const pages = [
-    '404', 
-    'pages/apps', 
-    'pages/contact', 
-    'pages/home', 
-    'pages/legal', 
-    'pages/projects', 
-    'pages/support',
-    'projects/bbgranden',
-    'projects/chess',
-    'projects/efs',
-    'projects/ifs',
-    'projects/pathfinding',
-    'projects/senappGameEngine',
-    'projects/skeadeals',
+    { url: '404', injected: true }, 
+    { url: 'pages/apps', injected: true }, 
+    { url: 'pages/contact', injected: true }, 
+    { url: 'pages/home', injected: true }, 
+    { url: 'pages/legal', injected: true }, 
+    { url: 'pages/projects', injected: true }, 
+    { url: 'pages/support', injected: true }, 
+    { url: 'projects/bbgranden', injected: true }, 
+    { url: 'projects/chess', injected: true }, 
+    { url: 'projects/efs', injected: true }, 
+    { url: 'projects/ifs', injected: true }, 
+    { url: 'projects/pathfinding', injected: true }, 
+    { url: 'projects/senappGameEngine', injected: true }, 
+    { url: 'projects/skeadeals', injected: true }, 
 ];
+
 const commonConfig = (env) => ({
     entry: pages.reduce((config, page) => {
-        config[page] = `./src/${page}.tsx`;
+        config[page.url] = `./src/${page.url}.tsx`;
         return config;
       }, {}),
     module: {
@@ -79,10 +82,11 @@ const commonConfig = (env) => ({
         pages.map(
           (page) =>
             new HtmlWebpackPlugin({
-              inject: true,
-              template: `./${page}.html`,
-              filename: `${page}.html`,
-              chunks: [page],
+                inject: !page.injected,
+                template: `./${page.url}.html`,
+                filename: `${page.url}.html`,
+                chunks: [page.url],
+                
             })
         ),
     ),

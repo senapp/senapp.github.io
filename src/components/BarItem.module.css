@@ -1,0 +1,19 @@
+.bar-item {
+    display: inline-block;
+}
+
+.bar-label {
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 18px;
+}
+
+.active {
+    color: black;
+}
+
+.bar-label:hover {
+    color: black;
+}

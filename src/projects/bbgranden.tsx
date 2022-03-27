@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-export const BBGranden: React.FC = () => (
+export const BBGrandenPage: React.FC = () => (
     <div>
         B&B Granden
     </div>
 );
 
-ReactDOM.render(<BBGranden />, document.getElementById('root'));
+ReactDOM.render(<BBGrandenPage />, document.getElementById('root'));

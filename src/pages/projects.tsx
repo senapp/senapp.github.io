@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-export const Projects: React.FC = () => (
+export const ProjectsPage: React.FC = () => (
     <div>
         Projects
     </div>
 );
 
-ReactDOM.render(<Projects />, document.getElementById('root'));
+ReactDOM.render(<ProjectsPage />, document.getElementById('root'));

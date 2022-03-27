@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+    font-family: "Open Sans";
+    font-weight: bolder;
+
+    --topbar-height: 60px;
+}

@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-export const Skeadeals: React.FC = () => (
+export const SkeadealsPage: React.FC = () => (
     <div>
         Skeadeals
     </div>
 );
 
-ReactDOM.render(<Skeadeals />, document.getElementById('root'));
+ReactDOM.render(<SkeadealsPage />, document.getElementById('root'));

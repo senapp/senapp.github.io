@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-export const Legal: React.FC = () => (
+export const LegalPage: React.FC = () => (
     <div>
         Legal
     </div>
 );
 
-ReactDOM.render(<Legal />, document.getElementById('root'));
+ReactDOM.render(<LegalPage />, document.getElementById('root'));

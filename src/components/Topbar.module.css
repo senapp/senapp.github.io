@@ -1,0 +1,11 @@
+.topbar {
+    width: 100%;
+    height: var(--topbar-height);
+    background-color: rgb(255 200 0);
+}
+
+.bar-list {
+    list-style-type: none;
+    line-height: calc(var(--topbar-height));
+    margin-left: 20px;
+}

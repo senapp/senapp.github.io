@@ -1,10 +1,13 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { PageContainer } from '../components/PageContainer';
 
-export const Home: React.FC = () => (
-    <div>
-        Home
-    </div>
+export const HomePage: React.FC = () => (
+    <PageContainer>
+        <div>
+            Home
+        </div>
+    </PageContainer>
 );
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+ReactDOM.render(<HomePage />, document.getElementById('root'));

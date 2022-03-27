@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-export const SenappGameEngine: React.FC = () => (
+export const SenappGameEnginePage: React.FC = () => (
     <div>
         Senapp Game Engine
     </div>
 );
 
-ReactDOM.render(<SenappGameEngine />, document.getElementById('root'));
+ReactDOM.render(<SenappGameEnginePage />, document.getElementById('root'));

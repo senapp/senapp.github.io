@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-export const IFS: React.FC = () => (
+export const IFSPage: React.FC = () => (
     <div>
         IFS
     </div>
 );
 
-ReactDOM.render(<IFS />, document.getElementById('root'));
+ReactDOM.render(<IFSPage />, document.getElementById('root'));

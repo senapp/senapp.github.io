@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-export const Pathfinding: React.FC = () => (
+export const PathfindingPage: React.FC = () => (
     <div>
         Pathfinding
     </div>
 );
 
-ReactDOM.render(<Pathfinding />, document.getElementById('root'));
+ReactDOM.render(<PathfindingPage />, document.getElementById('root'));

@@ -1,0 +1,1 @@
+export const filterCssClasses = (classes: { [key: string]: boolean }): string => Object.entries(classes).filter(classInfo => classInfo[1]).map(classInfo => classInfo[0]).join(' ');
