@@ -1,12 +1,13 @@
 .bar-item {
     display: inline-block;
+    max-height: inherit;
+    height: inherit;
 }
 
-.bar-label {
+.bar-item-content {
     transition: 0.3s ease;
     text-decoration: none;
     color: #fff;
-    padding: 5px 20px;
     font-size: 18px;
 }
 
@@ -14,6 +15,6 @@
     color: black;
 }
 
-.bar-label:hover {
+.bar-item-content:hover {
     color: black;
 }

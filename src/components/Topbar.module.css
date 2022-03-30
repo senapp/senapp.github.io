@@ -2,10 +2,17 @@
     width: 100%;
     height: var(--topbar-height);
     background-color: rgb(255 200 0);
+    max-height: var(--topbar-height);
+    display: flex;
+    justify-content: space-between;
 }
 
-.bar-list {
+.bar-list-left {
     list-style-type: none;
     line-height: calc(var(--topbar-height));
-    margin-left: 20px;
+    max-height: inherit;
+    height: inherit;
+    padding-left: 30px;
+    display: flex;
+    gap: 50px;
 }

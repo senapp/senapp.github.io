@@ -1,0 +1,28 @@
+.bottombar {
+    width: 100%;
+    height: var(--bottombar-height);
+    background-color: rgb(255 200 0);
+    max-height: var(--bottombar-height);
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-list-left {
+    list-style-type: none;
+    line-height: var(--bottombar-height);
+    max-height: inherit;
+    height: inherit;
+    padding-left: 30px;
+    display: flex;
+    gap: 50px;
+}
+
+.bar-list-right {
+    list-style-type: none;
+    line-height: var(--bottombar-height);
+    max-height: inherit;
+    height: inherit;
+    padding-right: 30px;
+    display: flex;
+    gap: 10px;
+}

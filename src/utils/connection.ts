@@ -26,16 +26,16 @@ export const getRootPath = (type?: ConnectionType): string => {
     }
 };
 
-export const toUrl = (path: string): string => {
+export const toUrl = (path: string, parameters = ''): string => {
     const type = getConnectionType();
 
     switch (type) {
         case ConnectionType.LocalHost:
         case ConnectionType.LocalHostNumber:
-            return `${getRootPath(type)}${path}.html`;
+            return `${getRootPath(type)}${path}.html${parameters}`;
         case ConnectionType.Public:
         default:
-            return `${getRootPath(type)}${path}`;
+            return `${getRootPath(type)}${path}${parameters}`;
     }
 };
 
