@@ -16,3 +16,14 @@
     display: flex;
     gap: 50px;
 }
+
+.logo {
+    position: fixed;
+    top: 0;
+    width: 100px;
+    right: 20px;
+    height: auto;
+    margin: auto;
+    border-radius: 50%;
+    z-index: 1;
+}

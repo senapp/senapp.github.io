@@ -3,29 +3,28 @@ const loaderUtils = require('loader-utils');
 const { merge } = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-
 const pages = [
-    { url: '404', injected: true }, 
-    { url: 'pages/apps', injected: true }, 
-    { url: 'pages/contact', injected: true }, 
-    { url: 'pages/home', injected: true }, 
-    { url: 'pages/legal', injected: true }, 
-    { url: 'pages/projects', injected: true }, 
-    { url: 'pages/support', injected: true }, 
-    { url: 'projects/bbgranden', injected: true }, 
-    { url: 'projects/chess', injected: true }, 
-    { url: 'projects/efs', injected: true }, 
-    { url: 'projects/ifs', injected: true }, 
-    { url: 'projects/pathfinding', injected: true }, 
-    { url: 'projects/senappGameEngine', injected: true }, 
-    { url: 'projects/skeadeals', injected: true }, 
+    { url: '404' }, 
+    { url: 'pages/apps' }, 
+    { url: 'pages/contact' }, 
+    { url: 'pages/home' }, 
+    { url: 'pages/legal' }, 
+    { url: 'pages/projects' }, 
+    { url: 'pages/support' }, 
+    { url: 'projects/bbgranden' }, 
+    { url: 'projects/chess' }, 
+    { url: 'projects/efs' }, 
+    { url: 'projects/ifs' }, 
+    { url: 'projects/pathfinding' }, 
+    { url: 'projects/senappGameEngine' }, 
+    { url: 'projects/skeadeals' }, 
 ];
 
 const commonConfig = (env) => ({
     entry: pages.reduce((config, page) => {
         config[page.url] = `./src/${page.url}.tsx`;
         return config;
-      }, {}),
+    }, {}),
     module: {
         rules: [
             {
@@ -82,11 +81,10 @@ const commonConfig = (env) => ({
         pages.map(
           (page) =>
             new HtmlWebpackPlugin({
-                inject: !page.injected,
-                template: `./${page.url}.html`,
+                template: `./webpack-template.html`,
                 filename: `${page.url}.html`,
                 chunks: [page.url],
-                
+                favicon: './resources/favicon.ico'
             })
         ),
     ),

@@ -16,7 +16,7 @@
   \********************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.ChessPage = void 0;\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\nconst ChessPage = () => (React.createElement(\"div\", null, \"Chess\"));\r\nexports.ChessPage = ChessPage;\r\nReactDOM.render(React.createElement(exports.ChessPage, null), document.getElementById('root'));\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcHJvamVjdHMvY2hlc3MudHN4LmpzIiwibWFwcGluZ3MiOiI7OztBQUFBLGdGQUErQjtBQUMvQiwyRkFBc0M7QUFFL0IsTUFBTSxTQUFTLEdBQWEsR0FBRyxFQUFFLENBQUMsQ0FDckMseUNBRU0sQ0FDVCxDQUFDO0FBSlcsaUJBQVMsYUFJcEI7QUFFRixRQUFRLENBQUMsTUFBTSxDQUFDLG9CQUFDLGlCQUFTLE9BQUcsRUFBRSxRQUFRLENBQUMsY0FBYyxDQUFDLE1BQU0sQ0FBQyxDQUFDLENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zZW5hcHAtc3R1ZGlvcy8uL3NyYy9wcm9qZWN0cy9jaGVzcy50c3g/YjFhYSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgKiBhcyBSZWFjdCBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCAqIGFzIFJlYWN0RE9NIGZyb20gJ3JlYWN0LWRvbSc7XHJcblxyXG5leHBvcnQgY29uc3QgQ2hlc3NQYWdlOiBSZWFjdC5GQyA9ICgpID0+IChcclxuICAgIDxkaXY+XHJcbiAgICAgICAgQ2hlc3NcclxuICAgIDwvZGl2PlxyXG4pO1xyXG5cclxuUmVhY3RET00ucmVuZGVyKDxDaGVzc1BhZ2UgLz4sIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykpOyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/projects/chess.tsx\n");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.ChessPage = void 0;\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\nconst PageContainer_1 = __webpack_require__(/*! ../components/page/PageContainer */ \"./src/components/page/PageContainer.tsx\");\r\nconst ChessPage = () => (React.createElement(PageContainer_1.PageContainer, null,\r\n    React.createElement(\"div\", null, \"Chess\")));\r\nexports.ChessPage = ChessPage;\r\nReactDOM.render(React.createElement(exports.ChessPage, null), document.getElementById('root'));\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcHJvamVjdHMvY2hlc3MudHN4LmpzIiwibWFwcGluZ3MiOiI7OztBQUFBLGdGQUErQjtBQUMvQiwyRkFBc0M7QUFDdEMsK0hBQWlFO0FBRTFELE1BQU0sU0FBUyxHQUFhLEdBQUcsRUFBRSxDQUFDLENBQ3JDLG9CQUFDLDZCQUFhO0lBQ1YseUNBRU0sQ0FDTSxDQUNuQixDQUFDO0FBTlcsaUJBQVMsYUFNcEI7QUFFRixRQUFRLENBQUMsTUFBTSxDQUFDLG9CQUFDLGlCQUFTLE9BQUcsRUFBRSxRQUFRLENBQUMsY0FBYyxDQUFDLE1BQU0sQ0FBQyxDQUFDLENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zZW5hcHAtc3R1ZGlvcy8uL3NyYy9wcm9qZWN0cy9jaGVzcy50c3g/YjFhYSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgKiBhcyBSZWFjdCBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCAqIGFzIFJlYWN0RE9NIGZyb20gJ3JlYWN0LWRvbSc7XHJcbmltcG9ydCB7IFBhZ2VDb250YWluZXIgfSBmcm9tICcuLi9jb21wb25lbnRzL3BhZ2UvUGFnZUNvbnRhaW5lcic7XHJcblxyXG5leHBvcnQgY29uc3QgQ2hlc3NQYWdlOiBSZWFjdC5GQyA9ICgpID0+IChcclxuICAgIDxQYWdlQ29udGFpbmVyPlxyXG4gICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgIENoZXNzXHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICA8L1BhZ2VDb250YWluZXI+XHJcbik7XHJcblxyXG5SZWFjdERPTS5yZW5kZXIoPENoZXNzUGFnZSAvPiwgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jvb3QnKSk7Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/projects/chess.tsx\n");
 
 /***/ })
 
@@ -34,7 +34,7 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
+/******/ 			id: moduleId,
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
@@ -82,9 +82,44 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
@@ -145,7 +180,7 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_react-dom_index_js"], () => (__webpack_require__("./src/projects/chess.tsx")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_css-loader_dist_runtime_api_js-node_modules_css-loader_dist_runtime_sour-2ee02c","src_components_page_PageContainer_tsx"], () => (__webpack_require__("./src/projects/chess.tsx")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

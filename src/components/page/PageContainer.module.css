@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+    font-family: "Open Sans";
+    font-weight: bolder;
+
+    --topbar-height: 60px;
+    --bottombar-height: 80px;
+}
+
+h1 {
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bolder;
+    line-height: 26.4px;
+}
+
+h3 {
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bolder;
+    line-height: 15.4px;
+}
+
+p {
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+span {
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+blockquote {
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.page-container {
+    min-height: calc(100vh - var(--topbar-height) - var(--bottombar-height) - 1px);
+}

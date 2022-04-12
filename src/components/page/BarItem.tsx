@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { ImageIdentity } from '../framework/Images';
-import { isCurrentUrl } from '../utils/connection';
-import { filterCssClasses } from '../utils/css';
-import { Image } from './Image';
+import { ImageIdentity } from '../../framework/Images';
+import { isCurrentUrl } from '../../utils/connection';
+import { filterCssClasses } from '../../utils/css';
+import { Image } from '../common/Image';
 
 import css from './BarItem.module.css';
 

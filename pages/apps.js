@@ -16,7 +16,7 @@
   \****************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.AppsPage = void 0;\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\nconst AppsPage = () => (React.createElement(\"div\", null, \"Apps\"));\r\nexports.AppsPage = AppsPage;\r\nReactDOM.render(React.createElement(exports.AppsPage, null), document.getElementById('root'));\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvYXBwcy50c3guanMiLCJtYXBwaW5ncyI6Ijs7O0FBQUEsZ0ZBQStCO0FBQy9CLDJGQUFzQztBQUUvQixNQUFNLFFBQVEsR0FBYSxHQUFHLEVBQUUsQ0FBQyxDQUNwQyx3Q0FFTSxDQUNULENBQUM7QUFKVyxnQkFBUSxZQUluQjtBQUVGLFFBQVEsQ0FBQyxNQUFNLENBQUMsb0JBQUMsZ0JBQVEsT0FBRyxFQUFFLFFBQVEsQ0FBQyxjQUFjLENBQUMsTUFBTSxDQUFDLENBQUMsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3NlbmFwcC1zdHVkaW9zLy4vc3JjL3BhZ2VzL2FwcHMudHN4P2EwOWYiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICogYXMgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQgKiBhcyBSZWFjdERPTSBmcm9tICdyZWFjdC1kb20nO1xyXG5cclxuZXhwb3J0IGNvbnN0IEFwcHNQYWdlOiBSZWFjdC5GQyA9ICgpID0+IChcclxuICAgIDxkaXY+XHJcbiAgICAgICAgQXBwc1xyXG4gICAgPC9kaXY+XHJcbik7XHJcblxyXG5SZWFjdERPTS5yZW5kZXIoPEFwcHNQYWdlIC8+LCBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncm9vdCcpKTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/pages/apps.tsx\n");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.AppsPage = void 0;\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\nconst PageContainer_1 = __webpack_require__(/*! ../components/page/PageContainer */ \"./src/components/page/PageContainer.tsx\");\r\nconst AppsPage = () => (React.createElement(PageContainer_1.PageContainer, null,\r\n    React.createElement(\"div\", null, \"Apps\")));\r\nexports.AppsPage = AppsPage;\r\nReactDOM.render(React.createElement(exports.AppsPage, null), document.getElementById('root'));\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvYXBwcy50c3guanMiLCJtYXBwaW5ncyI6Ijs7O0FBQUEsZ0ZBQStCO0FBQy9CLDJGQUFzQztBQUN0QywrSEFBaUU7QUFFMUQsTUFBTSxRQUFRLEdBQWEsR0FBRyxFQUFFLENBQUMsQ0FDcEMsb0JBQUMsNkJBQWE7SUFDVix3Q0FFTSxDQUNNLENBQ25CLENBQUM7QUFOVyxnQkFBUSxZQU1uQjtBQUVGLFFBQVEsQ0FBQyxNQUFNLENBQUMsb0JBQUMsZ0JBQVEsT0FBRyxFQUFFLFFBQVEsQ0FBQyxjQUFjLENBQUMsTUFBTSxDQUFDLENBQUMsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3NlbmFwcC1zdHVkaW9zLy4vc3JjL3BhZ2VzL2FwcHMudHN4P2EwOWYiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICogYXMgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQgKiBhcyBSZWFjdERPTSBmcm9tICdyZWFjdC1kb20nO1xyXG5pbXBvcnQgeyBQYWdlQ29udGFpbmVyIH0gZnJvbSAnLi4vY29tcG9uZW50cy9wYWdlL1BhZ2VDb250YWluZXInO1xyXG5cclxuZXhwb3J0IGNvbnN0IEFwcHNQYWdlOiBSZWFjdC5GQyA9ICgpID0+IChcclxuICAgIDxQYWdlQ29udGFpbmVyPlxyXG4gICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgIEFwcHNcclxuICAgICAgICA8L2Rpdj5cclxuICAgIDwvUGFnZUNvbnRhaW5lcj5cclxuKTtcclxuXHJcblJlYWN0RE9NLnJlbmRlcig8QXBwc1BhZ2UgLz4sIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykpOyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/pages/apps.tsx\n");
 
 /***/ })
 
@@ -34,7 +34,7 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
+/******/ 			id: moduleId,
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
@@ -82,9 +82,44 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
@@ -145,7 +180,7 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_react-dom_index_js"], () => (__webpack_require__("./src/pages/apps.tsx")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_css-loader_dist_runtime_api_js-node_modules_css-loader_dist_runtime_sour-2ee02c","src_components_page_PageContainer_tsx"], () => (__webpack_require__("./src/pages/apps.tsx")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

@@ -1,6 +1,11 @@
 export enum ImageIdentity {
     None,
-    Instagram
+    Instagram,
+    Youtube,
+    Twitter,
+    Reddit,
+    Discord,
+    SenappStudios
 }
 
 export type ImageInformation = {
@@ -9,5 +14,10 @@ export type ImageInformation = {
 }
 
 export const ImageStore = new Map<ImageIdentity, ImageInformation>([
-    [ImageIdentity.Instagram, { url: 'fab fa-instagram', fontawesome: true }]
+    [ImageIdentity.Instagram, { url: 'fab fa-instagram', fontawesome: true }],
+    [ImageIdentity.Youtube, { url: 'fab fa-youtube', fontawesome: true }],
+    [ImageIdentity.Twitter, { url: 'fab fa-twitter', fontawesome: true }],
+    [ImageIdentity.Reddit, { url: 'fab fa-reddit', fontawesome: true }],
+    [ImageIdentity.Discord, { url: 'fab fa-discord', fontawesome: true }],
+    [ImageIdentity.SenappStudios, { url: '../resources/logo.png' }],
 ]);

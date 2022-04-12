@@ -1,10 +1,13 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { PageContainer } from '../components/page/PageContainer';
 
 export const ContactPage: React.FC = () => (
-    <div>
-        Contact
-    </div>
+    <PageContainer>
+        <div>
+            Contact
+        </div>
+    </PageContainer>
 );
 
 ReactDOM.render(<ContactPage />, document.getElementById('root'));

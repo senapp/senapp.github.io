@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { ImageIdentity, ImageStore } from '../framework/Images';
-import { filterCssClasses } from '../utils/css';
+import { ImageIdentity, ImageStore } from '../../framework/Images';
+import { filterCssClasses } from '../../utils/css';
 
 import css from './Image.module.css';
 

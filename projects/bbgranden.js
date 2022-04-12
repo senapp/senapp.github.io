@@ -16,7 +16,7 @@
   \************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.BBGrandenPage = void 0;\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\nconst BBGrandenPage = () => (React.createElement(\"div\", null, \"B&B Granden\"));\r\nexports.BBGrandenPage = BBGrandenPage;\r\nReactDOM.render(React.createElement(exports.BBGrandenPage, null), document.getElementById('root'));\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcHJvamVjdHMvYmJncmFuZGVuLnRzeC5qcyIsIm1hcHBpbmdzIjoiOzs7QUFBQSxnRkFBK0I7QUFDL0IsMkZBQXNDO0FBRS9CLE1BQU0sYUFBYSxHQUFhLEdBQUcsRUFBRSxDQUFDLENBQ3pDLCtDQUVNLENBQ1QsQ0FBQztBQUpXLHFCQUFhLGlCQUl4QjtBQUVGLFFBQVEsQ0FBQyxNQUFNLENBQUMsb0JBQUMscUJBQWEsT0FBRyxFQUFFLFFBQVEsQ0FBQyxjQUFjLENBQUMsTUFBTSxDQUFDLENBQUMsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3NlbmFwcC1zdHVkaW9zLy4vc3JjL3Byb2plY3RzL2JiZ3JhbmRlbi50c3g/NDFhOSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgKiBhcyBSZWFjdCBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCAqIGFzIFJlYWN0RE9NIGZyb20gJ3JlYWN0LWRvbSc7XHJcblxyXG5leHBvcnQgY29uc3QgQkJHcmFuZGVuUGFnZTogUmVhY3QuRkMgPSAoKSA9PiAoXHJcbiAgICA8ZGl2PlxyXG4gICAgICAgIEImQiBHcmFuZGVuXHJcbiAgICA8L2Rpdj5cclxuKTtcclxuXHJcblJlYWN0RE9NLnJlbmRlcig8QkJHcmFuZGVuUGFnZSAvPiwgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jvb3QnKSk7Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/projects/bbgranden.tsx\n");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.BBGrandenPage = void 0;\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\nconst PageContainer_1 = __webpack_require__(/*! ../components/page/PageContainer */ \"./src/components/page/PageContainer.tsx\");\r\nconst BBGrandenPage = () => (React.createElement(PageContainer_1.PageContainer, null,\r\n    React.createElement(\"div\", null, \"B&B Granden\")));\r\nexports.BBGrandenPage = BBGrandenPage;\r\nReactDOM.render(React.createElement(exports.BBGrandenPage, null), document.getElementById('root'));\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcHJvamVjdHMvYmJncmFuZGVuLnRzeC5qcyIsIm1hcHBpbmdzIjoiOzs7QUFBQSxnRkFBK0I7QUFDL0IsMkZBQXNDO0FBQ3RDLCtIQUFpRTtBQUUxRCxNQUFNLGFBQWEsR0FBYSxHQUFHLEVBQUUsQ0FBQyxDQUN6QyxvQkFBQyw2QkFBYTtJQUNWLCtDQUVNLENBQ00sQ0FDbkIsQ0FBQztBQU5XLHFCQUFhLGlCQU14QjtBQUVGLFFBQVEsQ0FBQyxNQUFNLENBQUMsb0JBQUMscUJBQWEsT0FBRyxFQUFFLFFBQVEsQ0FBQyxjQUFjLENBQUMsTUFBTSxDQUFDLENBQUMsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3NlbmFwcC1zdHVkaW9zLy4vc3JjL3Byb2plY3RzL2JiZ3JhbmRlbi50c3g/NDFhOSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgKiBhcyBSZWFjdCBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCAqIGFzIFJlYWN0RE9NIGZyb20gJ3JlYWN0LWRvbSc7XHJcbmltcG9ydCB7IFBhZ2VDb250YWluZXIgfSBmcm9tICcuLi9jb21wb25lbnRzL3BhZ2UvUGFnZUNvbnRhaW5lcic7XHJcblxyXG5leHBvcnQgY29uc3QgQkJHcmFuZGVuUGFnZTogUmVhY3QuRkMgPSAoKSA9PiAoXHJcbiAgICA8UGFnZUNvbnRhaW5lcj5cclxuICAgICAgICA8ZGl2PlxyXG4gICAgICAgICAgICBCJkIgR3JhbmRlblxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgPC9QYWdlQ29udGFpbmVyPlxyXG4pO1xyXG5cclxuUmVhY3RET00ucmVuZGVyKDxCQkdyYW5kZW5QYWdlIC8+LCBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncm9vdCcpKTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/projects/bbgranden.tsx\n");
 
 /***/ })
 
@@ -34,7 +34,7 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
+/******/ 			id: moduleId,
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
@@ -82,9 +82,44 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
@@ -145,7 +180,7 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_react-dom_index_js"], () => (__webpack_require__("./src/projects/bbgranden.tsx")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_css-loader_dist_runtime_api_js-node_modules_css-loader_dist_runtime_sour-2ee02c","src_components_page_PageContainer_tsx"], () => (__webpack_require__("./src/projects/bbgranden.tsx")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
