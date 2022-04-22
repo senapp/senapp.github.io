@@ -1,7 +1,7 @@
 .bottombar {
     width: 100%;
     height: var(--bottombar-height);
-    background-color: rgb(255 200 0);
+    background-color: var(--senapp-colour);
     max-height: var(--bottombar-height);
     display: flex;
     justify-content: space-between;
@@ -33,9 +33,9 @@
 
 .copyright {
     position: absolute;
-    color: white;
+    color: var(--white-colour);
     text-align: center;
     font-size: 12px;
     width: 100%;
-    bottom: 5px;
+    margin-top: calc(var(--bottombar-height) - 20px);
 }

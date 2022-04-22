@@ -1,0 +1,43 @@
+.container {
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container:hover {
+    background-color: var(--background-colour2);
+}
+
+.container-expanded {
+    background-color: var(--background-colour2);
+}
+
+.header {
+    color: var(--text-colour1);
+    display: flex;
+    transition: margin-bottom 0.125s linear;
+}
+
+.header:hover {
+    cursor: pointer;
+}
+
+.header::before {
+    margin-right: 5px;
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+.header-expanded::before {
+    content: "▼";
+}
+
+.header-not-expanded::before {
+    content: "►";
+}
+
+.content {
+    background-color: var(--background-colour1);
+    border-radius: 5px;
+    transition: height 0.125s linear;
+}

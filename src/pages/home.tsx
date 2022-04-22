@@ -1,12 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { PageContainer } from '../components/page/PageContainer';
-
+import { PageContent } from '../components/page/PageContent';
 import css from './home.module.css';
 
 export const HomePage: React.FC = () => (
     <PageContainer>
-        <div className={css.homeContainer}>
+        <PageContent className={css.homeContainer}>
             <h1 className={css.title}>Senapp Studios</h1>
             <h2 className={css.text}>
             Game and App developer
@@ -14,7 +14,7 @@ export const HomePage: React.FC = () => (
             <h3 className={css.message}>
                 Check out the website with the tabs above and below!
             </h3>
-        </div>
+        </PageContent>
     </PageContainer>
 );
 

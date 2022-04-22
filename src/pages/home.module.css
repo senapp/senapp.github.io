@@ -3,22 +3,22 @@
     flex-direction: column;
     width: 100%;
     text-align: center;
-    min-height: inherit;
     justify-content: center;
 }
 
 .title {
-    color: rgb(49 49 49);
+    color: var(--text-colour1);
     font-size: 70px;
     line-height: 70px;
 }
 
 .text {
     line-height: 25px;
-    color: rgb(255 200 0);
+    color: var(--senapp-colour);
     margin-top: 15px;
 }
 
 .message {
+    color: var(--text-colour1);
     margin-top: 25px;
 }

@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { ImageIdentity } from '../../framework/Images';
+import { ImageIdentity } from '../../framework/images';
+import { getTheme, switchTheme, Theme } from '../../framework/theme';
 import { toUrl } from '../../utils/connection';
 import { BarItem } from './BarItem';
 import { Image } from '../common/Image';
@@ -13,6 +14,9 @@ export const Topbar: React.FC = () => (
             <BarItem label="Apps" url={toUrl(`/pages/apps`)} />
             <BarItem label="Contact" url={toUrl(`/pages/contact`)} />
         </ul>
-        <Image imageClassName={css.logo} imageIdentity={ImageIdentity.SenappStudios} />
+        <ul className={css.barListRight}>
+            <BarItem containerClassName={css.themeButton} action={switchTheme} imageIdentity={getTheme() === Theme.Dark ? ImageIdentity.Sun : ImageIdentity.Moon} />
+            <Image imageClassName={css.logo} imageIdentity={ImageIdentity.SenappStudios} />
+        </ul>
     </div>
 );

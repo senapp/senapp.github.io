@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-container {
+    width: 800px;
+    max-width: 90%;
+    margin-bottom: 10px;
+}
+
+.question-header {
+    padding: 10px;
+}
+
+.question {
+    padding: 20px;
+    color: var(--text-colour1);
+}
+
+.title {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: var(--text-colour1);
+}

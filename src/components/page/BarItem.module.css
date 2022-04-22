@@ -7,14 +7,15 @@
 .bar-item-content {
     transition: 0.3s ease;
     text-decoration: none;
-    color: #fff;
+    color: var(--white-colour);
     font-size: 18px;
 }
 
 .active {
-    color: black;
+    color: var(--black-colour);
 }
 
 .bar-item-content:hover {
     color: black;
+    cursor: pointer;
 }

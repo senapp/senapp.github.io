@@ -39,4 +39,4 @@ export const toUrl = (path: string, parameters = ''): string => {
     }
 };
 
-export const isCurrentUrl = (url: string): boolean => url === document.location.href;
+export const isCurrentUrl = (url: string | undefined): boolean => url === document.location.href;

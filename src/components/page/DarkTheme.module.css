@@ -1,0 +1,8 @@
+* {
+    --background-colour1: rgb(25 25 25);
+    --background-colour2: rgb(45 45 45);
+
+    --text-colour1: white;
+    --text-colour2: black;
+    --text-colour3: rgb(220 220 220);
+}

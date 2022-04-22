@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ImageIdentity, ImageStore } from '../../framework/Images';
+import { ImageIdentity, ImageStore } from '../../framework/images';
 import { filterCssClasses } from '../../utils/css';
 
 import css from './Image.module.css';
@@ -22,8 +22,8 @@ export const Image: React.FC<Props> = ({ imageIdentity, containerClassName = '',
     });
 
     const imageClasses = filterCssClasses({
-        [css.image]: true,
         [imageInfo.url]: !!imageInfo.fontawesome,
+        [css.image]: true,
         [imageClassName]: !!imageClassName,
     });
 

@@ -5,7 +5,9 @@ export enum ImageIdentity {
     Twitter,
     Reddit,
     Discord,
-    SenappStudios
+    SenappStudios,
+    Moon,
+    Sun,
 }
 
 export type ImageInformation = {
@@ -20,4 +22,6 @@ export const ImageStore = new Map<ImageIdentity, ImageInformation>([
     [ImageIdentity.Reddit, { url: 'fab fa-reddit', fontawesome: true }],
     [ImageIdentity.Discord, { url: 'fab fa-discord', fontawesome: true }],
     [ImageIdentity.SenappStudios, { url: '../resources/logo.png' }],
+    [ImageIdentity.Moon, { url: 'fas fa-moon', fontawesome: true }],
+    [ImageIdentity.Sun, { url: 'fas fa-sun', fontawesome: true }],
 ]);

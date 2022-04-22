@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ImageIdentity } from '../../framework/Images';
+import { ImageIdentity } from '../../framework/images';
 import { toUrl } from '../../utils/connection';
 import { BarItem } from './BarItem';
 
