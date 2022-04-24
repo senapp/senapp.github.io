@@ -9,12 +9,12 @@ export const ContactPage: React.FC = () => (
         <PageContent className={css.container}>
             <div className={css.mailContainer}>
                 <h1>Business:</h1>
-                <a href="mailto:business.senapp@gmail.com">business.senapp@gmail.com</a>
+                <a className={css.link} href="mailto:business.senapp@gmail.com">business.senapp@gmail.com</a>
                 <div>Please do not email us about using your ad network or marketing our apps through your service.</div>
             </div>
             <div className={css.mailContainer}>
                 <h1>Support:</h1>
-                <a href="mailto:help.senapp@gmail.com">help.senapp@gmail.com</a>
+                <a className={css.link} href="mailto:help.senapp@gmail.com">help.senapp@gmail.com</a>
                 <div>{'Please check the support tab on the bottom of this page before emailing support.'}</div>
             </div>
         </PageContent>

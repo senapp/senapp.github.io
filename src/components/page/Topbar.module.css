@@ -7,11 +7,12 @@
     justify-content: space-between;
     position: fixed;
     margin-top: var(--topbar-height-inverse);
+    z-index: 1;
 }
 
 .bar-list-left {
     list-style-type: none;
-    line-height: calc(var(--topbar-height));
+    line-height: var(--topbar-height);
     max-height: inherit;
     height: inherit;
     padding-left: 30px;
@@ -21,17 +22,11 @@
 
 .bar-list-right {
     list-style-type: none;
-    line-height: var(--bottombar-height);
+    line-height: var(--topbar-height);
     max-height: inherit;
     height: inherit;
     right: 20px;
     display: flex;
-}
-
-.theme-button {
-    right: 150px;
-    position: relative;
-    top: -9px;
 }
 
 .logo {
@@ -42,5 +37,4 @@
     height: auto;
     margin: auto;
     border-radius: 50%;
-    z-index: 1;
 }

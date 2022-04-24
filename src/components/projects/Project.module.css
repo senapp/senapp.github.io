@@ -1,0 +1,51 @@
+.container {
+    --container-size: 250px;
+    width: var(--container-size);
+    padding: 10px;
+}
+
+.image-container {
+    --image-size: 230px;
+    width: var(--container-size);
+    height: var(--container-size);
+}
+
+.image {
+    border-radius: 25%;
+    transition: 0.3s ease;
+    box-shadow: 1px 1px 5px;
+    color: grey;
+}
+
+.image-a {
+    border-radius: 25%;
+}
+
+.image:hover {
+    --image-size: 240px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    color: var(--text-colour1);
+}
+
+.links {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.link-seperator {
+    color: var(--text-colour1);
+}
+
+.link:hover {
+    color: red;
+}

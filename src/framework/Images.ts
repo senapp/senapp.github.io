@@ -8,6 +8,13 @@ export enum ImageIdentity {
     SenappStudios,
     Moon,
     Sun,
+    IFS,
+    EFS,
+    Chess,
+    GameEngine,
+    Pathfinding,
+    Skeadeals,
+    BBGranden,
 }
 
 export type ImageInformation = {
@@ -24,4 +31,11 @@ export const ImageStore = new Map<ImageIdentity, ImageInformation>([
     [ImageIdentity.SenappStudios, { url: '../resources/logo.png' }],
     [ImageIdentity.Moon, { url: 'fas fa-moon', fontawesome: true }],
     [ImageIdentity.Sun, { url: 'fas fa-sun', fontawesome: true }],
+    [ImageIdentity.IFS, { url: '../resources/projects/ifs.png' }],
+    [ImageIdentity.EFS, { url: '../resources/projects/efs.png' }],
+    [ImageIdentity.Chess, { url: '../resources/projects/chess.png' }],
+    [ImageIdentity.GameEngine, { url: '../resources/projects/gameEngine.png' }],
+    [ImageIdentity.Pathfinding, { url: '../resources/projects/pathfinding.png' }],
+    [ImageIdentity.Skeadeals, { url: '../resources/projects/skeadeals.png' }],
+    [ImageIdentity.BBGranden, { url: '../resources/projects/bbgranden.png' }],
 ]);

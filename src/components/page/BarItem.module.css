@@ -2,6 +2,7 @@
     display: inline-block;
     max-height: inherit;
     height: inherit;
+    white-space: nowrap;
 }
 
 .bar-item-content {

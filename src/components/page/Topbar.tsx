@@ -13,9 +13,9 @@ export const Topbar: React.FC = () => (
             <BarItem label="Home" url={toUrl(`/pages/home`)} />
             <BarItem label="Apps" url={toUrl(`/pages/apps`)} />
             <BarItem label="Contact" url={toUrl(`/pages/contact`)} />
+            <BarItem action={switchTheme} imageIdentity={getTheme() === Theme.Dark ? ImageIdentity.Sun : ImageIdentity.Moon} />
         </ul>
         <ul className={css.barListRight}>
-            <BarItem containerClassName={css.themeButton} action={switchTheme} imageIdentity={getTheme() === Theme.Dark ? ImageIdentity.Sun : ImageIdentity.Moon} />
             <Image imageClassName={css.logo} imageIdentity={ImageIdentity.SenappStudios} />
         </ul>
     </div>
