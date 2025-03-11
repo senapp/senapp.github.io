@@ -4,22 +4,14 @@ const { merge } = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const pages = [
-    { url: '404' }, 
-    { url: 'pages/apps' }, 
-    { url: 'pages/contact' }, 
-    { url: 'pages/home' }, 
-    { url: 'pages/legal' }, 
-    { url: 'pages/projects' }, 
-    { url: 'pages/support' }, 
-    { url: 'projects/bbgranden' }, 
-    { url: 'projects/chess' }, 
-    { url: 'projects/efs' }, 
-    { url: 'projects/ifs' }, 
-    { url: 'projects/pathfinding' }, 
-    { url: 'projects/senappGameEngine' }, 
-    { url: 'projects/skeadeals' }, 
-    { url: 'projects/kanji' }, 
-    { url: 'projects/japanworldmarker' }, 
+    { url: '404' },
+    { url: 'pages/apps' },
+    { url: 'pages/contact' },
+    { url: 'pages/home' },
+    { url: 'pages/legal' },
+    { url: 'pages/support' },
+    { url: 'projects/efs' },
+    { url: 'projects/ifs' },
 ];
 
 const commonConfig = (env) => ({

@@ -9,6 +9,6 @@ const Project = ({ project, showPrivate }) => (React.createElement("div", { clas
     React.createElement("div", { className: Project_module_css_1.default.title }, project.name),
     React.createElement("div", { className: Project_module_css_1.default.links }, project.links.map((link, index) => React.createElement(React.Fragment, null,
         index !== 0 && React.createElement("span", { className: Project_module_css_1.default.linkSeperator }, ', '),
-        React.createElement("a", { className: Project_module_css_1.default.link, key: index, href: link.url }, link.name))))));
+        React.createElement("a", { target: "_blank", className: Project_module_css_1.default.link, key: index, href: link.url }, link.name))))));
 exports.Project = Project;
 //# sourceMappingURL=Project.js.map

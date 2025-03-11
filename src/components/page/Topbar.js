@@ -16,12 +16,6 @@ const Topbar = ({ isProjects }) => {
     const mobileView = (0, settings_1.isPortrait)() || (0, settings_1.isMobile)();
     const [, forceUpdate] = (0, react_1.useReducer)(x => x + 1, 0);
     (0, react_1.useEffect)(() => { window.addEventListener('resize', forceUpdate); }, []);
-    if (isProjects && (0, theme_1.getProjectsState)() === theme_1.ProjectsState.Locked) {
-        (0, theme_1.setProjectsState)(theme_1.ProjectsState.Unlocked);
-    }
-    else if (!isProjects && (0, theme_1.getProjectsState)() === theme_1.ProjectsState.Unlocked) {
-        isProjects = true;
-    }
     const getLeftBarItems = () => {
         return (React.createElement("ul", { className: !mobileView ? Topbar_module_css_1.default.barListLeft : (Topbar_module_css_1.default.mobileList + " " + Topbar_module_css_1.default.barItemsExpanded) },
             React.createElement(BarItem_1.BarItem, { label: "Home", url: (0, connection_1.toUrl)(`/pages/home`) }),
