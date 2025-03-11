@@ -38,3 +38,42 @@
     margin: auto;
     border-radius: 50%;
 }
+
+.expand {
+    padding: 15px;
+    z-index: 1;
+}
+
+.expand-container {
+    height: unset;
+    width: unset;
+}
+
+.mobile-list {
+    list-style-type: none;
+    line-height: var(--topbar-height);
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    margin-top: var(--topbar-height);
+    transition: 0.5s ease;
+}
+
+.mobile-list-container {
+    height: 0vh;
+    width: 100vw;
+    position: absolute;
+    background-color: var(--senapp-colour);
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.bar-expanded {
+    height: 100vh;
+}
+
+.bar-items-expanded {
+    visibility: visible;
+    height: 50px;
+}

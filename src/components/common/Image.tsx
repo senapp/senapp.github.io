@@ -10,9 +10,10 @@ type Props = {
     imageClassName?: string;
     aClassName?: string;
     href?: string;
+    onClick?: () => void;
 }
 
-export const Image: React.FC<Props> = ({ imageIdentity, containerClassName = '', imageClassName = '', aClassName = '', href }) => {
+export const Image: React.FC<Props> = ({ imageIdentity, containerClassName = '', imageClassName = '', aClassName = '', onClick = undefined, href }) => {
     const imageInfo = ImageStore.get(imageIdentity);
     if (!imageInfo) {
         return null;
@@ -34,11 +35,11 @@ export const Image: React.FC<Props> = ({ imageIdentity, containerClassName = '',
     const getImage = (): JSX.Element => (
         imageInfo.fontawesome
             ? <i className={imageClasses} />
-            : <img className={imageClasses} src={imageInfo.url} />
+            : <img  className={imageClasses} src={imageInfo.url} />
     );
 
     return (
-        <div className={containerClasses}>
+        <div onClick={onClick} className={containerClasses}>
             {href
                 ? <a className={aClassName} href={href}>{getImage()}</a>
                 : getImage()

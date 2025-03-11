@@ -5,16 +5,17 @@ import css from './Project.module.css';
 
 type Props = {
     project: ProjectInformation;
+    showPrivate: boolean;
 }
 
-export const Project: React.FC<Props> = ({ project }) => (
+export const Project: React.FC<Props> = ({ project, showPrivate }) => (
     <div className={css.container}>
-        <Image href={project.url} aClassName={css.imageA} containerClassName={css.imageContainer} imageClassName={css.image} imageIdentity={project.icon} />
+        <Image href={(project.url + (showPrivate ? "?projects" : ""))} aClassName={css.imageA} containerClassName={css.imageContainer} imageClassName={css.image} imageIdentity={project.icon} />
         <div className={css.title}>{project.name}</div>
         <div className={css.links}>
             {project.links.map((link, index) => <>
                 {index !== 0 && <span className={css.linkSeperator}>{', '}</span>}
-                <a className={css.link} key={index} href={link.url}>{link.name}</a>
+                <a target="_blank" className={css.link} key={index} href={link.url}>{link.name}</a>
             </>)}
         </div>
     </div>

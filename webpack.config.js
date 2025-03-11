@@ -18,6 +18,8 @@ const pages = [
     { url: 'projects/pathfinding' }, 
     { url: 'projects/senappGameEngine' }, 
     { url: 'projects/skeadeals' }, 
+    { url: 'projects/kanji' }, 
+    { url: 'projects/japanworldmarker' }, 
 ];
 
 const commonConfig = (env) => ({

@@ -9,7 +9,7 @@ export const SupportPage: React.FC = () => (
     <PageContainer>
         <PageContent className={css.container}>
             <div className={css.title}>
-                * Frequently asked questions *
+                Frequently asked questions
             </div>
             <Expander header="My game crashed/freezed/bugged?" defaultExpanded={false} containerClassName={css.questionContainer} headerClassName={css.questionHeader}>
                 <div className={css.question}>

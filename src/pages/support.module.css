@@ -24,4 +24,6 @@
     margin-top: 50px;
     margin-bottom: 25px;
     color: var(--text-colour1);
+    text-align: center;
+    width: 90%;
 }

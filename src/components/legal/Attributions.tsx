@@ -69,7 +69,7 @@ export const Attributions: React.FC<Props> = ({ expanded = false }) => (
             from www.flaticon.com
             </li>
             <li>
-            Originial Football player silhouettes by
+            Original Football player silhouettes by
                 <a href="https://www.freepik.com/freepik">Freepik</a> from
             www.freepik.com
             </li>

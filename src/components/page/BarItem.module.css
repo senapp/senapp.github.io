@@ -3,6 +3,8 @@
     max-height: inherit;
     height: inherit;
     white-space: nowrap;
+    align-content: center;
+    max-width: 200px;
 }
 
 .bar-item-content {

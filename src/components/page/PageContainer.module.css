@@ -16,6 +16,6 @@
 }
 
 .page-container {
-    min-height: calc(100vh - var(--topbar-height) - var(--bottombar-height) - 1px);
+    min-height: calc(100vh - var(--topbar-height) - var(--bottombar-height));
     background-color: var(--background-colour1);
 }

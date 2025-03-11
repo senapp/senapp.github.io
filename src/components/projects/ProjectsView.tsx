@@ -18,7 +18,7 @@ export const ProjectsView: React.FC<Props> = ({ showPrivate }) => {
 
     return (
         <div className={css.container}>
-            {availableProjects.map(project => <Project key={project.type} project={project} />)}
+            {availableProjects.map(project => <Project showPrivate={showPrivate} key={project.type} project={project} />)}
         </div>
     );
 };

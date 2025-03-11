@@ -15,6 +15,10 @@ export enum ImageIdentity {
     Pathfinding,
     Skeadeals,
     BBGranden,
+    Kanji,
+    JapanWorldMarker,
+    Expand,
+    Close
 }
 
 export type ImageInformation = {
@@ -38,4 +42,8 @@ export const ImageStore = new Map<ImageIdentity, ImageInformation>([
     [ImageIdentity.Pathfinding, { url: '../resources/projects/pathfinding.png' }],
     [ImageIdentity.Skeadeals, { url: '../resources/projects/skeadeals.png' }],
     [ImageIdentity.BBGranden, { url: '../resources/projects/bbgranden.png' }],
+    [ImageIdentity.Kanji, { url: '../resources/projects/kanji.png' }],
+    [ImageIdentity.JapanWorldMarker, { url: '../resources/projects/japanworldmarker.png' }],
+    [ImageIdentity.Expand, { url: '../resources/icons/menuBar.png' }],
+    [ImageIdentity.Close, { url: '../resources/icons/close.png' }],
 ]);

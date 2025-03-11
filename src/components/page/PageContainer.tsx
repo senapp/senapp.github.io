@@ -1,11 +1,16 @@
 import * as React from 'react';
-import { Bottombar } from './BottomBar';
 import { Topbar } from './Topbar';
 
 import css from './PageContainer.module.css';
 import { getTheme, Theme } from '../../framework/theme';
+import { BottomBar } from './BottomBar';
+import { useEffect, useReducer, useState } from 'react';
 
-export const PageContainer: React.FC = ({ children }) => {
+type Props = {
+    isProjects?: boolean;
+}
+
+export const PageContainer: React.FC<Props> = ({ children, isProjects = false }) => {
     if (getTheme() === Theme.Light) {
         require('./LightTheme.module.css');
     } else {
@@ -13,14 +18,15 @@ export const PageContainer: React.FC = ({ children }) => {
     }
 
     require('./PageContainer.module.css');
+    const params = window.location.search.includes("?") ? window.location.search.split("?")[1] : "";
 
     return (
         <div>
-            <Topbar />
+            <Topbar isProjects={isProjects || params === "projects"} />
             <div className={css.pageContainer}>
                 {children}
             </div>
-            <Bottombar />
+            <BottomBar />
         </div>
     );
 };

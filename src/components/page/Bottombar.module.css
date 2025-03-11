@@ -19,7 +19,6 @@
 
 .bar-list-right {
     list-style-type: none;
-    line-height: var(--bottombar-height);
     max-height: inherit;
     height: inherit;
     padding-right: 30px;
@@ -38,4 +37,74 @@
     font-size: 12px;
     width: 100%;
     margin-top: calc(var(--bottombar-height) - 20px);
+}
+
+.expand {
+    padding: 15px;
+}
+
+.expand-container {
+    height: unset;
+    width: unset;
+}
+
+.button-expanded {
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+
+.mobile-list-left {
+    list-style-type: none;
+    line-height: var(--topbar-height);
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    margin-top: var(--topbar-height);
+    transition: 0.5s ease;
+}
+
+.mobile-list-right {
+    list-style-type: none;
+    line-height: var(--topbar-height);
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    margin-top: var(--topbar-height);
+    transition: 0.5s ease;
+}
+
+.mobile-list-container {
+    height: 0vh;
+    width: 100%;
+    position: absolute;
+    background-color: var(--senapp-colour);
+    transition: 1s ease;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+}
+
+.bar-expanded {
+    height: 100vh;
+}
+
+.bar-items-expanded {
+    visibility: visible;
+    padding-left: 30px;
+    padding-right: 0px;
+    width: 80%;
+    height: 50px;
+}
+
+.bar-items-expanded-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    place-content: center;
+    position: absolute;
+    bottom: 5%;
+    width: 91%;
 }
